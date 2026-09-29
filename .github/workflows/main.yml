@@ -1,0 +1,30 @@
+name: Actualizar reporte
+
+on:
+  schedule:
+    - cron: "50 12 * * *"   # 6:50 a. m. hora de Guatemala
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Descargar datos de Windsor.ai
+        env:
+          WINDSOR_API_KEY: ${{ secrets.WINDSOR_API_KEY }}
+        run: |
+          if [ -f scriptsupdate.py ]; then mkdir -p scripts && cp scriptsupdate.py scripts/update.py; fi
+          python scripts/update.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "reportes-bot"
+          git config user.email "reportes-bot@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || (git commit -m "Actualizar datos $(date -u +%F)" && git push)
