@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Cpath d=%22M16 2l12 7v14l-12 7-12-7V9z%22 fill=%22%23b7790a%22/%3E%3C/svg%3E">
+<title>Guatebee · Meta Ads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: panel de colmena — encabezado con selector de mes, fila de KPIs, gráficas, tablas y lectura del mes */
+:root{
+  --bg:#f7f6f2; --surface:#ffffff; --line:#e4e1d8; --fg:#1f1d19; --muted:#6c675c;
+  --accent:#b7790a; --accent-soft:#f3e6c8; --good:#2f7d4f; --bad:#b4442f; --grid:#ece9e1;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#16150f; --surface:#1f1d17; --line:#34312a; --fg:#eeeae0; --muted:#a39d8f;
+  --accent:#e2a531; --accent-soft:#3a2f17; --good:#5fbf86; --bad:#e2775f; --grid:#2a2822; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#16150f; --surface:#1f1d17; --line:#34312a; --fg:#eeeae0; --muted:#a39d8f;
+  --accent:#e2a531; --accent-soft:#3a2f17; --good:#5fbf86; --bad:#e2775f; --grid:#2a2822; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);padding:0 16px}
+.wrap{max-width:1120px;margin:0 auto;padding-block:28px 56px;display:grid;gap:28px}
+header{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:end;justify-content:space-between}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(28px,4vw,40px)/1.05 var(--display);margin:6px 0 0;text-wrap:balance}
+h1 span{color:var(--accent)}
+h2{font:700 20px/1.2 var(--display);margin:0}
+.meta{color:var(--muted);font-size:13px;margin-top:6px}
+.months{display:flex;flex-wrap:wrap;gap:6px}
+.months button{font:500 13px var(--body);padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.months button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.months button:focus-visible,.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pill{display:inline-flex;align-items:center;gap:6px;font:500 12px var(--mono);padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--fg)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.kpi{background:var(--surface);padding:16px 18px;display:grid;gap:4px;min-width:0}
+.kpi.hero{background:var(--accent-soft)}
+.kpi .lbl{font-size:12px;color:var(--muted)}
+.kpi .val{font:700 26px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.delta{font:500 12px var(--mono)}
+.delta.up{color:var(--good)} .delta.down{color:var(--bad)} .delta.flat{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1.6fr 1fr;gap:20px}
+@media (max-width:820px){.grid2{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;min-width:0;display:grid;gap:12px;align-content:start}
+.card p.sub{margin:0;color:var(--muted);font-size:13px}
+svg text{fill:var(--muted);font:11px var(--mono)}
+.chart{position:relative}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:12px/1.4 var(--body);padding:6px 9px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-110%)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th{font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);text-align:right;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 10px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal;min-width:180px}
+td .camp{display:block;color:var(--muted);font-size:12px}
+.ads{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.ad{border:1px solid var(--line);border-radius:10px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;min-width:0;background:var(--surface)}
+.creative{position:relative;aspect-ratio:5/4;max-width:100%;background:linear-gradient(160deg,var(--accent-soft),color-mix(in srgb,var(--accent) 22%,var(--surface)));display:grid;place-items:center;color:var(--fg);text-decoration:none}
+.creative svg{width:44px;height:44px}
+.creative img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.creative img ~ .play.pic{display:none}
+.creative .fmt{position:absolute;top:10px;left:10px;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;background:var(--surface);padding:3px 8px;border-radius:999px}
+.creative .open{position:absolute;bottom:10px;left:10px;right:10px;font:500 13px var(--body);background:var(--fg);color:var(--bg);border-radius:8px;padding:8px 10px;text-align:center}
+a.creative:hover .open,a.creative:focus-visible .open{background:var(--accent);color:#1f1d19}
+a.creative:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.ad .body{padding:12px 14px;display:grid;gap:10px;align-content:start;min-width:0}
+.ad .nm{font-weight:600;font-size:14px;line-height:1.3;overflow-wrap:anywhere}
+.ad .nm small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+.ad dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:13px;font-variant-numeric:tabular-nums}
+.ad dt{color:var(--muted)} .ad dd{margin:0;text-align:right}
+.eff{display:inline-block;padding:2px 8px;border-radius:999px;font:500 12px var(--mono)}
+.eff.good{background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good)}
+.eff.bad{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.eff.mid{background:var(--grid);color:var(--fg)}
+.read{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.read h3{font:600 13px var(--body);margin:0 0 8px;display:flex;gap:8px;align-items:center}
+.read h3::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c)}
+.read ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:14px}
+.summary{font:500 18px/1.45 var(--display);margin:0;max-width:70ch;text-wrap:pretty}
+.tabs{display:flex;gap:4px}
+.tabs button{font:500 12px var(--body);padding:5px 10px;border-radius:6px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-pressed="true"]{color:var(--fg);background:var(--grid)}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
+footer{color:var(--muted);font-size:12px}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+@media (prefers-reduced-motion:no-preference){.kpi .val,.card{transition:opacity .2s}}
+</style>
+
+
+<style>html,body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Meta Ads · Facebook e Instagram</div>
+      <h1>Guatebee <span id="mlabel">—</span></h1>
+      <div class="meta" id="meta">Cargando datos…</div>
+    </div>
+    <div class="months" id="months" role="group" aria-label="Mes del reporte"></div>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="Resumen del mes"></section>
+
+  <section class="card" id="readcard">
+    <p class="summary" id="summary"></p>
+    <div class="read" id="read"></div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="row">
+        <h2>Día a día</h2>
+        <div class="tabs" id="dtabs" role="group" aria-label="Métrica diaria">
+          <button data-m="conversations" aria-pressed="true">Conversaciones</button>
+          <button data-m="spend" aria-pressed="false">Inversión</button>
+          <button data-m="clicks" aria-pressed="false">Clics</button>
+        </div>
+      </div>
+      <div class="chart" id="daily"></div>
+    </div>
+    <div class="card">
+      <h2>Costo por conversación</h2>
+      <p class="sub">Por mes, en USD. Más bajo es mejor.</p>
+      <div class="chart" id="cpc"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Campañas</h2>
+    <div class="tablewrap"><table id="tcamp"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Anuncios</h2>
+    <p class="sub">Ordenados por inversión. El color del costo por conversación lo compara con el promedio del mes: verde, mejor; rojo, 50% más caro o más.</p>
+    <div class="ads" id="tads"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const usd=(v,d=2)=>v==null?'—':'$'+Number(v).toLocaleString('es-GT',{minimumFractionDigits:d,maximumFractionDigits:d});
+const num=v=>v==null?'—':Math.round(v).toLocaleString('es-GT');
+const pct=v=>v==null?'—':(v*100).toFixed(1)+'%';
+const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+let DATA,cur,metric='conversations';
+
+function delta(a,b,lowerBetter,neutral){
+  if(b==null||!b) return '<span class="delta flat">sin mes previo</span>';
+  const d=(a-b)/b; if(Math.abs(d)<.005) return '<span class="delta flat">= vs mes anterior</span>';
+  const good=lowerBetter? d<0 : d>0;
+  return `<span class="delta ${neutral?'flat':good?'up':'down'}">${d>0?'▲':'▼'} ${Math.abs(d*100).toFixed(0)}% vs mes anterior</span>`;
+}
+function renderKpis(m,p){
+  const t=m.totals, pt=p?p.totals:null;
+  const cpconv=t.conversations?t.spend/t.conversations:null, pcp=pt&&pt.conversations?pt.spend/pt.conversations:null;
+  const items=[
+    ['Conversaciones iniciadas',num(t.conversations),delta(t.conversations,pt&&pt.conversations),true],
+    ['Costo por conversación',usd(cpconv),delta(cpconv,pcp,true),true],
+    ['Inversión',usd(t.spend),delta(t.spend,pt&&pt.spend,false,true)],
+    ['Alcance',num(t.reach),delta(t.reach,pt&&pt.reach)],
+    ['CTR',pct(t.ctr),delta(t.ctr,pt&&pt.ctr)],
+    ['CPM',usd(t.cpm),delta(t.cpm,pt&&pt.cpm,true)],
+    ['Frecuencia',t.frequency.toFixed(2),'<span class="delta flat">veces por persona</span>'],
+    ['Clics al enlace',num(t.link_clicks),delta(t.link_clicks,pt&&pt.link_clicks)],
+  ];
+  $('#kpis').innerHTML=items.map(([l,v,d,h])=>`<div class="kpi${h?' hero':''}"><span class="lbl">${l}</span><span class="val">${v}</span>${d}</div>`).join('');
+}
+function renderRead(m){
+  const i=m.insights;
+  if(!i){$('#readcard').hidden=true;return}
+  $('#readcard').hidden=false;
+  $('#summary').textContent=i.summary;
+  const blk=(t,arr,c)=>arr&&arr.length?`<div style="--c:${c}"><h3>${t}</h3><ul>${arr.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:'';
+  $('#read').innerHTML=blk('Lo que funcionó',i.wins,'var(--good)')+blk('A vigilar',i.watch,'var(--bad)')+blk('Siguientes pasos',i.next,'var(--accent)');
+}
+function bars(el,pts,fmt,opts={}){
+  const W=opts.w||640,H=opts.h||240,L=44,R=8,T=12,B=26;
+  if(!pts.length){el.innerHTML='<div class="empty">Sin datos para este periodo</div>';return}
+  const max=Math.max(...pts.map(p=>p.v))||1;
+  const step=niceStep(max/4), top=Math.ceil(max/step)*step;
+  const bw=(W-L-R)/pts.length, gap=Math.min(bw*.28,6);
+  const y=v=>T+(H-T-B)*(1-v/top);
+  let g='';
+  for(let v=0;v<=top+1e-9;v+=step){g+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/><text x="${L-6}" y="${y(v)+4}" text-anchor="end">${fmt(v,true)}</text>`}
+  let b='';
+  pts.forEach((p,i)=>{
+    const x=L+i*bw+gap/2,w=Math.max(bw-gap,1),h=Math.max(y(0)-y(p.v),p.v>0?1:0),r=Math.min(4,w/2,h);
+    const col=p.hi?'var(--accent)':'color-mix(in srgb,var(--accent) 55%,var(--surface))';
+    b+=`<path d="M${x},${y(0)} v${-(h-r)} q0,${-r} ${r},${-r} h${w-2*r} q${r},0 ${r},${r} v${h-r} z" fill="${col}"/>`;
+    b+=`<rect x="${L+i*bw}" y="${T}" width="${bw}" height="${H-T-B}" fill="transparent" data-i="${i}"/>`;
+    if(p.tick) b+=`<text x="${x+w/2}" y="${H-8}" text-anchor="middle">${p.tick}</text>`;
+  });
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${opts.label||''}">${g}${b}</svg><div class="tip" hidden></div>`;
+  const tip=el.querySelector('.tip'),svg=el.querySelector('svg');
+  svg.addEventListener('pointermove',e=>{
+    const i=e.target.dataset&&e.target.dataset.i; if(i==null){tip.hidden=true;return}
+    const p=pts[+i],rb=el.getBoundingClientRect();
+    tip.innerHTML=`<b>${p.name}</b><br>${fmt(p.v)}${p.extra?'<br>'+p.extra:''}`;
+    tip.style.left=Math.min(Math.max(e.clientX-rb.left,70),rb.width-70)+'px';tip.style.top=(e.clientY-rb.top)+'px';tip.hidden=false;
+  });
+  svg.addEventListener('pointerleave',()=>tip.hidden=true);
+}
+function niceStep(x){const p=Math.pow(10,Math.floor(Math.log10(x||1)));const n=x/p;return (n<=1?1:n<=2?2:n<=5?5:10)*p}
+function renderDaily(key){
+  const m=DATA.months[key],[yy,mm]=key.split('-').map(Number),days=new Date(yy,mm,0).getDate();
+  const by=Object.fromEntries(m.daily.map(d=>[d.date,d]));
+  const pts=[];
+  for(let d=1;d<=days;d++){
+    const ds=`${key}-${String(d).padStart(2,'0')}`,r=by[ds];
+    if(m.partial&&m.through&&ds>m.through)break;
+    pts.push({v:r?r[metric]:0,name:`${d} ${MES[mm-1]}`,tick:(d===1||d%5===0)?d:'',hi:true,
+      extra:r?`${usd(r.spend)} · ${num(r.clicks)} clics · ${num(r.conversations)} conv.`:'Sin pauta'});
+  }
+  const fmt=metric==='spend'?(v,ax)=>usd(v,ax?0:2):v=>num(v);
+  bars($('#daily'),pts,fmt,{label:'Serie diaria'});
+}
+function renderCpc(key){
+  const ks=Object.keys(DATA.months).sort();
+  const pts=ks.map(k=>{const t=DATA.months[k].totals;const [y,m]=k.split('-').map(Number);
+    return {v:t.conversations?t.spend/t.conversations:0,name:DATA.months[k].label+(DATA.months[k].partial?' (parcial)':''),tick:MES[m-1],hi:k===key,
+      extra:`${usd(t.spend)} ÷ ${num(t.conversations)} conversaciones`}});
+  bars($('#cpc'),pts,(v,ax)=>usd(v,2),{w:360,h:260,label:'Costo por conversación por mes'});
+}
+function effTag(cost,avg){
+  if(cost==null) return '<span class="eff mid">sin conv.</span>';
+  const r=cost/avg; if(r<=.9) return `<span class="eff good">${usd(cost)}</span>`;
+  if(r>=1.5) return `<span class="eff bad">${usd(cost)}</span>`; return `<span class="eff mid">${usd(cost)}</span>`;
+}
+function renderTables(m){
+  const avg=m.totals.conversations?m.totals.spend/m.totals.conversations:1;
+  const OBJ={OUTCOME_ENGAGEMENT:'Interacción',OUTCOME_SALES:'Ventas',OUTCOME_LEADS:'Clientes potenciales',OUTCOME_TRAFFIC:'Tráfico',OUTCOME_AWARENESS:'Reconocimiento'};
+  const c=[...m.campaigns].sort((a,b)=>b.spend-a.spend);
+  $('#tcamp').innerHTML=`<thead><tr><th>Campaña</th><th>Objetivo</th><th>Inversión</th><th>Alcance</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>Conversaciones</th><th>Costo / conv.</th></tr></thead><tbody>`+
+    (c.length?c.map(r=>`<tr><td>${r.name}</td><td>${OBJ[r.objective]||r.objective}</td><td>${usd(r.spend)}</td><td>${num(r.reach)}</td><td>${num(r.impressions)}</td><td>${num(r.clicks)}</td><td>${pct(r.ctr)}</td><td>${num(r.conversations)}</td><td>${effTag(r.conversations?r.spend/r.conversations:null,avg)}</td></tr>`).join(''):'<tr><td colspan="9" class="empty">Sin campañas activas</td></tr>')+'</tbody>';
+  const ICON={video:'<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="var(--surface)"/><path d="M19 15l15 9-15 9z" fill="var(--fg)"/></svg>',
+    imagen:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="40" height="32" rx="4" fill="var(--surface)"/><circle cx="16" cy="19" r="4" fill="var(--accent)"/><path d="M8 36l11-11 7 7 6-5 8 9z" fill="var(--fg)"/></svg>',
+    otros:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="4" y="26" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="26" width="18" height="14" rx="3" fill="var(--surface)"/></svg>'};
+  const a=[...m.ads].sort((x,y)=>y.spend-x.spend);
+  $('#tads').innerHTML=a.length?a.map(r=>{
+    const f=r.format||'otros', lbl=r.format==='video'?'Video':r.format==='imagen'?'Imagen':'Grupo';
+    const img=r.thumbnail?`<img src="${r.thumbnail}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:'';
+    const glyph=`<span class="play${r.format==='video'?'':' pic'}" style="position:relative">${ICON[f]}</span>`;
+    const tile=r.permalink
+      ?`<a class="creative" href="${r.permalink}" target="_blank" rel="noopener" aria-label="Ver ${r.name} en Instagram">${img}<span class="fmt">${lbl}</span>${glyph}<span class="open">${r.format==='video'?'Ver video':'Ver anuncio'} en Instagram ↗</span></a>`
+      :`<div class="creative">${img}<span class="fmt">${lbl}</span>${glyph}</div>`;
+    return `<article class="ad">${tile}<div class="body"><div class="nm">${r.name}<small>${r.campaign}</small></div>
+      <dl><dt>Inversión</dt><dd>${usd(r.spend)}</dd><dt>Impresiones</dt><dd>${num(r.impressions)}</dd><dt>CTR</dt><dd>${pct(r.ctr)}</dd>
+      <dt>Conversaciones</dt><dd>${num(r.conversations)}</dd><dt>Costo / conv.</dt><dd>${effTag(r.conversations?r.spend/r.conversations:null,avg)}</dd></dl></div></article>`}).join('')
+    :'<div class="empty">Sin anuncios</div>';
+}
+function show(key){
+  cur=key; const ks=Object.keys(DATA.months).sort(),i=ks.indexOf(key),m=DATA.months[key],p=i>0?DATA.months[ks[i-1]]:null;
+  document.querySelectorAll('#months button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===key));
+  $('#mlabel').textContent=m.label;
+  const th=m.through?new Date(m.through+'T12:00'):null;
+  $('#meta').innerHTML=(m.partial?`<span class="pill">Parcial · datos al ${th.getDate()} ${MES[th.getMonth()]}</span> `:'')+`Comparado con ${p?p.label.toLowerCase():'—'} · cifras en ${DATA.account.currency}`;
+  renderKpis(m,p);renderRead(m);renderDaily(key);renderCpc(key);renderTables(m);
+  try{localStorage.setItem('gb-month',key)}catch(e){}
+}
+function init(d){
+  DATA=d; const ks=Object.keys(d.months).sort();
+  $('#months').innerHTML=ks.map(k=>`<button data-k="${k}" aria-pressed="false">${d.months[k].label.replace(' 20',' ’')}</button>`).join('');
+  $('#months').addEventListener('click',e=>{const b=e.target.closest('button');if(b)show(b.dataset.k)});
+  $('#dtabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;metric=b.dataset.m;
+    document.querySelectorAll('#dtabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderDaily(cur)});
+  const up=new Date(d.updated+'T12:00');
+  $('#foot').textContent=`Fuente: ${d.account.platform} vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}. Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
+  let saved=null;try{saved=localStorage.getItem('gb-month')}catch(e){}
+  show(ks.includes(saved)?saved:ks[ks.length-1]);
+}
+fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(init)
+  .catch(()=>{$('#meta').textContent='No se pudieron cargar los datos. Recarga la página.'});
+</script>
+
+</body>
+</html>

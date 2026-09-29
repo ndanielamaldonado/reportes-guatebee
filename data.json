@@ -1,0 +1,706 @@
+{
+ "account": {
+  "name": "Guatebee",
+  "currency": "USD",
+  "platform": "Meta Ads"
+ },
+ "updated": "2026-09-29",
+ "source": "Windsor.ai",
+ "months": {
+  "2026-08": {
+   "label": "Agosto 2026",
+   "partial": false,
+   "through": null,
+   "totals": {
+    "spend": 166.5,
+    "impressions": 105887,
+    "reach": 35087,
+    "clicks": 4207,
+    "link_clicks": 1620,
+    "ctr": 0.0397,
+    "cpc": 0.0396,
+    "cpm": 1.5724,
+    "frequency": 3.0178,
+    "leads": 13,
+    "conversations": 386,
+    "engagement": 5460
+   },
+   "campaigns": [
+    {
+     "name": "Agosto 2026",
+     "objective": "OUTCOME_ENGAGEMENT",
+     "spend": 116.52,
+     "impressions": 72079,
+     "reach": 27528,
+     "clicks": 2862,
+     "ctr": 0.0397,
+     "conversations": 265,
+     "engagement": 3943
+    },
+    {
+     "name": "recuerdos Agosto 2026 - Copia 2",
+     "objective": "OUTCOME_ENGAGEMENT",
+     "spend": 49.97,
+     "impressions": 33801,
+     "reach": 17080,
+     "clicks": 1345,
+     "ctr": 0.0398,
+     "conversations": 121,
+     "engagement": 1517
+    }
+   ],
+   "ads": [
+    {
+     "name": "Agosto 2026",
+     "campaign": "Agosto 2026",
+     "spend": 116.52,
+     "impressions": 72079,
+     "clicks": 2862,
+     "ctr": 0.0397,
+     "conversations": 265,
+     "format": "video",
+     "permalink": "https://www.instagram.com/p/DcUYUsYgukU/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/672045242_1273263984874584_1691435211653531260_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=gZgWTGhtFBgQ7kNvwGogdwc&_nc_oc=AdrjkIFiqGt4UotmL54b_PmUPRedJFvx1KpSeShLPsfEFq8EqNiaqhWhmI3zl0SGlJA&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=5rBuaNQJiaDyHvSill0jQQ&_nc_tpa=Q5bMBQK1JfMdvD9G1pmCmjw38kUCY8FlW6JG7M11tI8KtCNdLZcUA5lsKLz4ssZDSSPxmfRJASJjRydBdg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQNx9k5WoyYl3TPFHootJUfOp0uv-HACpbWOHf6FL50QJg&oe=6AC22374"
+    },
+    {
+     "name": "recuerdos agosto 2026",
+     "campaign": "recuerdos Agosto 2026 - Copia 2",
+     "spend": 49.97,
+     "impressions": 33801,
+     "clicks": 1345,
+     "ctr": 0.0398,
+     "conversations": 121,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/Db_OpUHA5sV/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/652485285_4304856823105356_8118220679826618551_n.png?_nc_cat=101&ccb=1-7&_nc_ohc=mdkWfAsKUZwQ7kNvwHooWS4&_nc_oc=AdoYcvBW-8xxgSeEn5tWA1k27cC42L03c2QkZtZDVllHuAX8NR2GCwrkEAXlfUC7Y2g&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=Ece4NgiTWNwGnvYr51CD1A&_nc_tpa=Q5bMBQJZgm9jzlzw7NGMZMKPQQ86j4UI93HkDJvvRpfP3EH1zZ8fc-pCbFXkMyP3QAZcvc9UHZXAQpRd9g&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AQOnyQDtngNIcP6gh-JXS0HM1f3VfNdpmnnhnnoH7ESO3g&oe=6AC1FDDC"
+    }
+   ],
+   "daily": [
+    {
+     "date": "2026-08-01",
+     "spend": 3.27,
+     "impressions": 2879,
+     "clicks": 151,
+     "conversations": 6
+    },
+    {
+     "date": "2026-08-02",
+     "spend": 2.71,
+     "impressions": 2564,
+     "clicks": 113,
+     "conversations": 9
+    },
+    {
+     "date": "2026-08-03",
+     "spend": 3.08,
+     "impressions": 2767,
+     "clicks": 127,
+     "conversations": 12
+    },
+    {
+     "date": "2026-08-04",
+     "spend": 3.79,
+     "impressions": 2717,
+     "clicks": 124,
+     "conversations": 13
+    },
+    {
+     "date": "2026-08-05",
+     "spend": 3.49,
+     "impressions": 2573,
+     "clicks": 82,
+     "conversations": 8
+    },
+    {
+     "date": "2026-08-06",
+     "spend": 3.06,
+     "impressions": 2655,
+     "clicks": 122,
+     "conversations": 10
+    },
+    {
+     "date": "2026-08-07",
+     "spend": 3.47,
+     "impressions": 2523,
+     "clicks": 115,
+     "conversations": 5
+    },
+    {
+     "date": "2026-08-08",
+     "spend": 3.36,
+     "impressions": 1691,
+     "clicks": 72,
+     "conversations": 11
+    },
+    {
+     "date": "2026-08-09",
+     "spend": 2.89,
+     "impressions": 1250,
+     "clicks": 80,
+     "conversations": 7
+    },
+    {
+     "date": "2026-08-10",
+     "spend": 3.05,
+     "impressions": 1664,
+     "clicks": 61,
+     "conversations": 13
+    },
+    {
+     "date": "2026-08-11",
+     "spend": 3.01,
+     "impressions": 2003,
+     "clicks": 63,
+     "conversations": 8
+    },
+    {
+     "date": "2026-08-12",
+     "spend": 3.21,
+     "impressions": 2299,
+     "clicks": 79,
+     "conversations": 9
+    },
+    {
+     "date": "2026-08-13",
+     "spend": 5.38,
+     "impressions": 3771,
+     "clicks": 198,
+     "conversations": 22
+    },
+    {
+     "date": "2026-08-14",
+     "spend": 5.96,
+     "impressions": 3430,
+     "clicks": 156,
+     "conversations": 14
+    },
+    {
+     "date": "2026-08-15",
+     "spend": 6.47,
+     "impressions": 3998,
+     "clicks": 162,
+     "conversations": 14
+    },
+    {
+     "date": "2026-08-16",
+     "spend": 6.02,
+     "impressions": 4258,
+     "clicks": 137,
+     "conversations": 10
+    },
+    {
+     "date": "2026-08-17",
+     "spend": 8.1,
+     "impressions": 5512,
+     "clicks": 223,
+     "conversations": 29
+    },
+    {
+     "date": "2026-08-18",
+     "spend": 7.51,
+     "impressions": 4728,
+     "clicks": 165,
+     "conversations": 11
+    },
+    {
+     "date": "2026-08-19",
+     "spend": 7.96,
+     "impressions": 5795,
+     "clicks": 205,
+     "conversations": 16
+    },
+    {
+     "date": "2026-08-20",
+     "spend": 7.33,
+     "impressions": 4622,
+     "clicks": 185,
+     "conversations": 14
+    },
+    {
+     "date": "2026-08-21",
+     "spend": 6.27,
+     "impressions": 4231,
+     "clicks": 161,
+     "conversations": 10
+    },
+    {
+     "date": "2026-08-22",
+     "spend": 6.93,
+     "impressions": 4736,
+     "clicks": 188,
+     "conversations": 8
+    },
+    {
+     "date": "2026-08-23",
+     "spend": 7.22,
+     "impressions": 5308,
+     "clicks": 216,
+     "conversations": 17
+    },
+    {
+     "date": "2026-08-24",
+     "spend": 7.93,
+     "impressions": 4474,
+     "clicks": 202,
+     "conversations": 24
+    },
+    {
+     "date": "2026-08-25",
+     "spend": 6.92,
+     "impressions": 3212,
+     "clicks": 110,
+     "conversations": 9
+    },
+    {
+     "date": "2026-08-26",
+     "spend": 5.07,
+     "impressions": 2522,
+     "clicks": 83,
+     "conversations": 11
+    },
+    {
+     "date": "2026-08-27",
+     "spend": 5.23,
+     "impressions": 2565,
+     "clicks": 81,
+     "conversations": 9
+    },
+    {
+     "date": "2026-08-28",
+     "spend": 7.6,
+     "impressions": 3497,
+     "clicks": 122,
+     "conversations": 10
+    },
+    {
+     "date": "2026-08-29",
+     "spend": 6.92,
+     "impressions": 4270,
+     "clicks": 170,
+     "conversations": 22
+    },
+    {
+     "date": "2026-08-30",
+     "spend": 7.76,
+     "impressions": 4405,
+     "clicks": 160,
+     "conversations": 16
+    },
+    {
+     "date": "2026-08-31",
+     "spend": 5.53,
+     "impressions": 2968,
+     "clicks": 94,
+     "conversations": 9
+    }
+   ],
+   "insights": {
+    "summary": "Agosto 2026: 386 conversaciones iniciadas con $166.50 de inversión, a $0.43 por conversación.",
+    "wins": [
+     "“recuerdos Agosto 2026 - Copia 2” es la campaña más eficiente: $0.41 por conversación (121 conversaciones).",
+     "El mejor anuncio es “recuerdos agosto 2026”: 121 conversaciones a $0.41 cada una."
+    ],
+    "watch": [
+     "La frecuencia está en 3.0: la audiencia ve los mismos anuncios varias veces."
+    ],
+    "next": [
+     "Escalar el presupuesto de “recuerdos Agosto 2026 - Copia 2” mientras mantenga el costo por conversación.",
+     "Renovar creativos para bajar la frecuencia y recuperar el CTR.",
+     "Hacer nuevas piezas con el estilo de “recuerdos agosto 2026”."
+    ]
+   }
+  },
+  "2026-09": {
+   "label": "Septiembre 2026",
+   "partial": true,
+   "through": "2026-09-28",
+   "totals": {
+    "spend": 158.21,
+    "impressions": 100900,
+    "reach": 35741,
+    "clicks": 3577,
+    "link_clicks": 1533,
+    "ctr": 0.0355,
+    "cpc": 0.0442,
+    "cpm": 1.568,
+    "frequency": 2.8231,
+    "leads": 12,
+    "conversations": 532,
+    "engagement": 4514
+   },
+   "campaigns": [
+    {
+     "name": "Septiembre 2026",
+     "objective": "OUTCOME_ENGAGEMENT",
+     "spend": 95.49,
+     "impressions": 55711,
+     "reach": 19986,
+     "clicks": 1854,
+     "ctr": 0.0333,
+     "conversations": 333,
+     "engagement": 3737
+    },
+    {
+     "name": "Septiembre 2026 2",
+     "objective": "OUTCOME_ENGAGEMENT",
+     "spend": 46.11,
+     "impressions": 34113,
+     "reach": 15893,
+     "clicks": 1487,
+     "ctr": 0.0436,
+     "conversations": 192,
+     "engagement": 668
+    },
+    {
+     "name": "Consumo | WhatsApp | Sep 2026",
+     "objective": "OUTCOME_SALES",
+     "spend": 16.61,
+     "impressions": 11076,
+     "reach": 7849,
+     "clicks": 236,
+     "ctr": 0.0213,
+     "conversations": 7,
+     "engagement": 109
+    }
+   ],
+   "ads": [
+    {
+     "name": "Anuncio general recuerdos septiembre",
+     "campaign": "Septiembre 2026",
+     "spend": 56.47,
+     "impressions": 35647,
+     "clicks": 1030,
+     "ctr": 0.0289,
+     "conversations": 195,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/Dcu6Bt9g5We/",
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/782906784_4475294132728290_7661499903962196972_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=D6BHILm6-OYQ7kNvwG9598e&_nc_oc=AdrEnM6PEPK6uJIdsXQneFRRsA-aDOJJrm2p73Swp5J6umrt6YsqX0jXragZwYFoweU&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=Zp0kCFH2UdcycUXcGQhofg&_nc_tpa=Q5bMBQJGJ7rH95W6VEg16IDnp3UAFExxEMbT2RUTQhkJ4LBfKP6YIwm0lhnjnTimrs4MksEEhJ8LAqZlyA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQP5MrGAR-bUc4LM6cV3SKj3B2YMGmtkbVxwgt5YnL4i1g&oe=6AC22C3E"
+    },
+    {
+     "name": "Septiembre 2026 2",
+     "campaign": "Septiembre 2026 2",
+     "spend": 46.11,
+     "impressions": 34113,
+     "clicks": 1487,
+     "ctr": 0.0436,
+     "conversations": 192,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/Dcu0Dr_gIWR/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782616408_4475261012731602_3261967354194480485_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=41ngbO4qN3oQ7kNvwHrzls8&_nc_oc=Adrqv7G_MWPjoFllA_X3yr7I4z2vEJ3LRDUEUQXYyctE5Hweobzll28JMDWFK4Etr8s&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=UF5hpsD4OZzn76bliNNYjw&_nc_tpa=Q5bMBQLN7a19liA7-3qI_Gl0YXF5WsjVIFKdT5dmPVpmytWZAhL1jV24ePozAhNRRn3Z3VVSJr-KfWRYXA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQPT27oaHOm7k8REMdZkdEp7w_LcFMzoWOskDhzJwWJj0Q&oe=6AC2204F"
+    },
+    {
+     "name": "Bodas 2026",
+     "campaign": "Septiembre 2026",
+     "spend": 30.18,
+     "impressions": 14826,
+     "clicks": 603,
+     "ctr": 0.0407,
+     "conversations": 110,
+     "format": "video",
+     "permalink": "https://www.instagram.com/p/Dcu414zAGNJ/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/790879890_2077122333167746_6859682140345575250_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=R0OSDIrQ85cQ7kNvwHPNc34&_nc_oc=AdrTrI0fvqUCceilCL4Hfhf2V9iHkT1sA96pfwoIDGygCcg4OKapDcdra2eyr2BtOQY&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=QJF17rl0F2Ti7ea43aPD-Q&_nc_tpa=Q5bMBQJ2FjnGRCoC9C1UubyA6UCytkyHGdyuhl9NEkANqqGZFqEeZIqtU6cp9VfkPkQgBtnoru8Biy6TZQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQNvAWSdBe7Wt2GlKP-_59rF8FnUNn_kXBUfvSjhW1Zhzg&oe=6AC212AB"
+    },
+    {
+     "name": "Bautizo 2026",
+     "campaign": "Septiembre 2026",
+     "spend": 8.84,
+     "impressions": 5238,
+     "clicks": 221,
+     "ctr": 0.0422,
+     "conversations": 28,
+     "format": "video",
+     "permalink": "https://www.instagram.com/p/Dcu4gkSgQZI/",
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/791483315_1050137684479073_2469698523742957530_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=P5OeiApf5B4Q7kNvwEhjKki&_nc_oc=AdpiLH5skV23gJL4jNd_A1gHPDhkW4VQWysNcfjvPq5qyqiyqCTPh029X1mdeXYvvsA&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=rj_3blBb0vi5IcMK9rwe_Q&_nc_tpa=Q5bMBQIVX3NftJFdxCe0pCvFq1SwLJSngO2CmZiPUtq8pwA2OtQhis4PjBvkv_IGaVXz6dWeb97rqlFy2w&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQNY-P_QZU_JvzUYSp4LVgNwR9KxYhsYUuGyedfh8Q_eNQ&oe=6AC21DC6"
+    },
+    {
+     "name": "05 Limón 420 | Precio",
+     "campaign": "Consumo | WhatsApp | Sep 2026",
+     "spend": 3.87,
+     "impressions": 2416,
+     "clicks": 59,
+     "ctr": 0.0244,
+     "conversations": 1,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/DdJwt_-AS-8/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/803050814_4508044406130299_4497764155422877418_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=-nkYeiAFe4MQ7kNvwH_8H-u&_nc_oc=Ado8f93IkhJeBp1hkj2KupbkEVfuWVne_yrn3FhhoOr32Qq4Wn0mCpQb0Ap4iVmZWc4&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=KxfatxOZgzTVSkxtXvyfvg&_nc_tpa=Q5bMBQIIojsM7IMRj9W3rrzRimhp7orgRsPrL4xu2iwpMOSEgcSnkgIcdclijyoJfTD6BpCDTSTKI5arAg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQMRWAtDn_Qz1ZwCSAPx8GaXyPXd_d2qeOn2_qFBu7dd0A&oe=6AC20732"
+    },
+    {
+     "name": "09 Limón 420 | Limón real",
+     "campaign": "Consumo | WhatsApp | Sep 2026",
+     "spend": 3.61,
+     "impressions": 2435,
+     "clicks": 40,
+     "ctr": 0.0164,
+     "conversations": 0,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/DdJxrF-As-K/",
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/802811462_4508111256123614_5495873283354799675_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=OSkC8cQRDHoQ7kNvwGdK7H8&_nc_oc=AdpIkF7bJrkr7-mpng90PWi84cRMl6BClrXkKbmbY0iB2xYe3B0UMQ2_dOjdjriK2oA&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=FdQ5e1ccwpI-aCMO2F2dgw&_nc_tpa=Q5bMBQJXXajckg8GNom7z8mDrhadHT2kPXzmKJaDb3ak36qcfpyxFFcsuUTcGnHCFIEfr3SFOZL1wXK_dQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQNCpxYxpmcXfukoW-6vhaFkljLddTei2-EJdavFJvwVsA&oe=6AC201AF"
+    },
+    {
+     "name": "01 Limón 420 | Marca",
+     "campaign": "Consumo | WhatsApp | Sep 2026",
+     "spend": 2.9,
+     "impressions": 2158,
+     "clicks": 48,
+     "ctr": 0.0222,
+     "conversations": 1,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/DdJv7xegvmO/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/802989823_4508111169456956_8339202747498845702_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=UN-chSKw4HkQ7kNvwFe_TFo&_nc_oc=Adrb6muS3zH39gYQctYGLwHA_au9u0hRirz-UuwBSLItnfMcHtst6NDbr0IHdQty0Tw&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=6jctX3Sc125jwubgE9z4zw&_nc_tpa=Q5bMBQLdMa0OzBA3KyFyru5NXqo5UfSd-6T_ExwI0KqKov-97XGNRZr4thp54iHANWh3M3kKOu5QwMKNjg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQNyTOtaB3ppdHbxcDMH6Eji8-s0KApQ8s0XyEvy9WKlag&oe=6AC20433"
+    },
+    {
+     "name": "Otros 13 anuncios Limón/Líquida 420",
+     "campaign": "Consumo | WhatsApp | Sep 2026",
+     "spend": 2.81,
+     "impressions": 2179,
+     "clicks": 32,
+     "ctr": 0.0147,
+     "conversations": 2,
+     "format": "imagen",
+     "permalink": null,
+     "thumbnail": null
+    },
+    {
+     "name": "01 Líquida 420 | Marca",
+     "campaign": "Consumo | WhatsApp | Sep 2026",
+     "spend": 2.12,
+     "impressions": 1020,
+     "clicks": 26,
+     "ctr": 0.0255,
+     "conversations": 1,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/DdJx4KaAQwL/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/802900245_4508168536117886_5242002021818040036_n.jpg?_nc_cat=103&ccb=1-7&_nc_ohc=UGcCI2NJeT0Q7kNvwEp18Ea&_nc_oc=AdrQiChkMLu0NIUBl0l6LR0zZOdhNUK0nqaUt8R0I_SE6U5gi_BhKLyfE_TACYM8Ufc&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=h-XL3IhVFytvx_OcyngqNQ&_nc_tpa=Q5bMBQL0oNma026d39o8m97T6fUMzxJKPbqnJmIkYjhC3C7tsM61jDHD2KP0RzEVohv7apX-zXbzwfGbdg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQOkW3y-apO3NFTZt1oGG4YB8c6PNZicP_Ekk5Hbe-FIPg&oe=6AC216E9"
+    },
+    {
+     "name": "07 Limón 420 | Pureza",
+     "campaign": "Consumo | WhatsApp | Sep 2026",
+     "spend": 1.3,
+     "impressions": 866,
+     "clicks": 31,
+     "ctr": 0.0358,
+     "conversations": 1,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/DdJxPlYANke/",
+     "thumbnail": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/802778871_4508044382796968_38700568953148384_n.jpg?_nc_cat=109&ccb=1-7&_nc_ohc=7LmYoADkxOUQ7kNvwHDZfjM&_nc_oc=Adrtt7GoGzeqZxg69UMpdzRIOfp9tP0LlVKRrazWrX1XWg-0ITQXgHXfPuEs64H4xu0&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=kit0LR86N4Zi_FEN59YATA&_nc_tpa=Q5bMBQIRQP-cuQ-Nitr-E_g59x5o5nAzV7VY9Gjpn7VLrBDVXj4Ony_mTTKMXl0-CAJ-mlKgNxG8Pm2rYQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQONP0xM84YrThbTK1_vRtjeyUmoyghv3Z1trv0FFaqQyQ&oe=6AC20E26"
+    }
+   ],
+   "daily": [
+    {
+     "date": "2026-09-01",
+     "spend": 5.72,
+     "impressions": 3070,
+     "clicks": 181,
+     "conversations": 21
+    },
+    {
+     "date": "2026-09-02",
+     "spend": 5.81,
+     "impressions": 4174,
+     "clicks": 201,
+     "conversations": 22
+    },
+    {
+     "date": "2026-09-03",
+     "spend": 5.44,
+     "impressions": 3538,
+     "clicks": 148,
+     "conversations": 22
+    },
+    {
+     "date": "2026-09-04",
+     "spend": 4.52,
+     "impressions": 2831,
+     "clicks": 120,
+     "conversations": 14
+    },
+    {
+     "date": "2026-09-05",
+     "spend": 5.18,
+     "impressions": 3164,
+     "clicks": 143,
+     "conversations": 21
+    },
+    {
+     "date": "2026-09-06",
+     "spend": 5.33,
+     "impressions": 3615,
+     "clicks": 128,
+     "conversations": 20
+    },
+    {
+     "date": "2026-09-07",
+     "spend": 5.73,
+     "impressions": 3498,
+     "clicks": 133,
+     "conversations": 15
+    },
+    {
+     "date": "2026-09-08",
+     "spend": 5.56,
+     "impressions": 3675,
+     "clicks": 137,
+     "conversations": 26
+    },
+    {
+     "date": "2026-09-09",
+     "spend": 5.5,
+     "impressions": 3286,
+     "clicks": 102,
+     "conversations": 11
+    },
+    {
+     "date": "2026-09-10",
+     "spend": 10.37,
+     "impressions": 7202,
+     "clicks": 228,
+     "conversations": 31
+    },
+    {
+     "date": "2026-09-11",
+     "spend": 15.71,
+     "impressions": 9854,
+     "clicks": 219,
+     "conversations": 15
+    },
+    {
+     "date": "2026-09-12",
+     "spend": 4.81,
+     "impressions": 3330,
+     "clicks": 122,
+     "conversations": 18
+    },
+    {
+     "date": "2026-09-13",
+     "spend": 4.99,
+     "impressions": 3350,
+     "clicks": 96,
+     "conversations": 19
+    },
+    {
+     "date": "2026-09-14",
+     "spend": 4.66,
+     "impressions": 3072,
+     "clicks": 64,
+     "conversations": 14
+    },
+    {
+     "date": "2026-09-15",
+     "spend": 5.81,
+     "impressions": 3640,
+     "clicks": 123,
+     "conversations": 19
+    },
+    {
+     "date": "2026-09-16",
+     "spend": 4.96,
+     "impressions": 3179,
+     "clicks": 93,
+     "conversations": 12
+    },
+    {
+     "date": "2026-09-17",
+     "spend": 5.26,
+     "impressions": 3143,
+     "clicks": 130,
+     "conversations": 21
+    },
+    {
+     "date": "2026-09-18",
+     "spend": 4.8,
+     "impressions": 3047,
+     "clicks": 118,
+     "conversations": 16
+    },
+    {
+     "date": "2026-09-19",
+     "spend": 4.91,
+     "impressions": 3500,
+     "clicks": 125,
+     "conversations": 17
+    },
+    {
+     "date": "2026-09-20",
+     "spend": 5.03,
+     "impressions": 3804,
+     "clicks": 124,
+     "conversations": 24
+    },
+    {
+     "date": "2026-09-21",
+     "spend": 5.02,
+     "impressions": 3274,
+     "clicks": 100,
+     "conversations": 18
+    },
+    {
+     "date": "2026-09-22",
+     "spend": 4.89,
+     "impressions": 3078,
+     "clicks": 121,
+     "conversations": 17
+    },
+    {
+     "date": "2026-09-23",
+     "spend": 4.89,
+     "impressions": 2983,
+     "clicks": 101,
+     "conversations": 24
+    },
+    {
+     "date": "2026-09-24",
+     "spend": 5.07,
+     "impressions": 3062,
+     "clicks": 127,
+     "conversations": 16
+    },
+    {
+     "date": "2026-09-25",
+     "spend": 4.49,
+     "impressions": 2395,
+     "clicks": 97,
+     "conversations": 16
+    },
+    {
+     "date": "2026-09-26",
+     "spend": 4.39,
+     "impressions": 2734,
+     "clicks": 104,
+     "conversations": 22
+    },
+    {
+     "date": "2026-09-27",
+     "spend": 4.78,
+     "impressions": 2743,
+     "clicks": 104,
+     "conversations": 25
+    },
+    {
+     "date": "2026-09-28",
+     "spend": 4.58,
+     "impressions": 2659,
+     "clicks": 88,
+     "conversations": 16
+    }
+   ],
+   "insights": {
+    "summary": "Septiembre 2026 (en curso, datos al 28): 532 conversaciones iniciadas con $158.21 de inversión, a $0.30 por conversación (mejor que agosto: $0.43).",
+    "wins": [
+     "El costo por conversación bajó 31%: de $0.43 a $0.30.",
+     "“Septiembre 2026 2” es la campaña más eficiente: $0.24 por conversación (192 conversaciones).",
+     "El mejor anuncio es “Septiembre 2026 2”: 192 conversaciones a $0.24 cada una."
+    ],
+    "watch": [
+     "“Consumo | WhatsApp | Sep 2026” gastó $16.61 y generó 7 conversaciones ($2.37 cada una, 8.0 veces el promedio).",
+     "El CTR bajó de 4.0% a 3.5%.",
+     "La frecuencia está en 2.8: la audiencia ve los mismos anuncios varias veces."
+    ],
+    "next": [
+     "Mover presupuesto de “Consumo | WhatsApp | Sep 2026” a “Septiembre 2026 2”, o pausar sus anuncios de bajo rendimiento.",
+     "Renovar creativos para bajar la frecuencia y recuperar el CTR.",
+     "Hacer nuevas piezas con el estilo de “Septiembre 2026 2”."
+    ]
+   }
+  }
+ }
+}
