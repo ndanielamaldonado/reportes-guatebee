@@ -1430,6 +1430,790 @@
      ]
     }
    }
+  },
+  "facebook": {
+   "followers": 7518,
+   "as_of": "2026-09-28"
+  },
+  "fb_months": {
+   "2026-08": {
+    "label": "Agosto 2026",
+    "partial": false,
+    "through": null,
+    "days": 31,
+    "totals": {
+     "followers": 7467,
+     "followers_start": 7426,
+     "new_followers": 51,
+     "unfollows": 8,
+     "reach_avg": 2372,
+     "reach_peak": 3988,
+     "engagements": 4349,
+     "page_views": 2055,
+     "posts": 6,
+     "post_clicks": 70,
+     "post_reach_avg": 557,
+     "post_eng_rate": 0.008375710439724798
+    },
+    "daily": [
+     {
+      "date": "2026-08-01",
+      "followers": 7426,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 2327,
+      "engagements": 165,
+      "page_views": 66
+     },
+     {
+      "date": "2026-08-02",
+      "followers": 7426,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 2058,
+      "engagements": 117,
+      "page_views": 43
+     },
+     {
+      "date": "2026-08-03",
+      "followers": 7426,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 2162,
+      "engagements": 137,
+      "page_views": 86
+     },
+     {
+      "date": "2026-08-04",
+      "followers": 7429,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 2083,
+      "engagements": 130,
+      "page_views": 106
+     },
+     {
+      "date": "2026-08-05",
+      "followers": 7430,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 2009,
+      "engagements": 84,
+      "page_views": 22
+     },
+     {
+      "date": "2026-08-06",
+      "followers": 7431,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 2125,
+      "engagements": 129,
+      "page_views": 76
+     },
+     {
+      "date": "2026-08-07",
+      "followers": 7435,
+      "new_followers": 4,
+      "unfollows": 0,
+      "reach": 1732,
+      "engagements": 113,
+      "page_views": 77
+     },
+     {
+      "date": "2026-08-08",
+      "followers": 7435,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 1253,
+      "engagements": 70,
+      "page_views": 28
+     },
+     {
+      "date": "2026-08-09",
+      "followers": 7435,
+      "new_followers": 1,
+      "unfollows": 1,
+      "reach": 892,
+      "engagements": 86,
+      "page_views": 43
+     },
+     {
+      "date": "2026-08-10",
+      "followers": 7434,
+      "new_followers": 0,
+      "unfollows": 1,
+      "reach": 1136,
+      "engagements": 59,
+      "page_views": 23
+     },
+     {
+      "date": "2026-08-11",
+      "followers": 7433,
+      "new_followers": 0,
+      "unfollows": 1,
+      "reach": 1368,
+      "engagements": 70,
+      "page_views": 68
+     },
+     {
+      "date": "2026-08-12",
+      "followers": 7433,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 1639,
+      "engagements": 85,
+      "page_views": 61
+     },
+     {
+      "date": "2026-08-13",
+      "followers": 7436,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 2598,
+      "engagements": 203,
+      "page_views": 103
+     },
+     {
+      "date": "2026-08-14",
+      "followers": 7437,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 2328,
+      "engagements": 167,
+      "page_views": 84
+     },
+     {
+      "date": "2026-08-15",
+      "followers": 7438,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 2745,
+      "engagements": 151,
+      "page_views": 39
+     },
+     {
+      "date": "2026-08-16",
+      "followers": 7442,
+      "new_followers": 5,
+      "unfollows": 1,
+      "reach": 3150,
+      "engagements": 141,
+      "page_views": 57
+     },
+     {
+      "date": "2026-08-17",
+      "followers": 7444,
+      "new_followers": 3,
+      "unfollows": 1,
+      "reach": 3864,
+      "engagements": 224,
+      "page_views": 73
+     },
+     {
+      "date": "2026-08-18",
+      "followers": 7447,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 3250,
+      "engagements": 170,
+      "page_views": 109
+     },
+     {
+      "date": "2026-08-19",
+      "followers": 7450,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 3988,
+      "engagements": 209,
+      "page_views": 96
+     },
+     {
+      "date": "2026-08-20",
+      "followers": 7451,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 3292,
+      "engagements": 192,
+      "page_views": 61
+     },
+     {
+      "date": "2026-08-21",
+      "followers": 7454,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 2885,
+      "engagements": 166,
+      "page_views": 68
+     },
+     {
+      "date": "2026-08-22",
+      "followers": 7455,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 3330,
+      "engagements": 179,
+      "page_views": 42
+     },
+     {
+      "date": "2026-08-23",
+      "followers": 7457,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 3687,
+      "engagements": 220,
+      "page_views": 50
+     },
+     {
+      "date": "2026-08-24",
+      "followers": 7457,
+      "new_followers": 2,
+      "unfollows": 2,
+      "reach": 2942,
+      "engagements": 224,
+      "page_views": 115
+     },
+     {
+      "date": "2026-08-25",
+      "followers": 7460,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 1939,
+      "engagements": 121,
+      "page_views": 78
+     },
+     {
+      "date": "2026-08-26",
+      "followers": 7460,
+      "new_followers": 1,
+      "unfollows": 1,
+      "reach": 1499,
+      "engagements": 81,
+      "page_views": 43
+     },
+     {
+      "date": "2026-08-27",
+      "followers": 7462,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1501,
+      "engagements": 91,
+      "page_views": 34
+     },
+     {
+      "date": "2026-08-28",
+      "followers": 7464,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 2354,
+      "engagements": 136,
+      "page_views": 90
+     },
+     {
+      "date": "2026-08-29",
+      "followers": 7464,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 2868,
+      "engagements": 177,
+      "page_views": 58
+     },
+     {
+      "date": "2026-08-30",
+      "followers": 7466,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 2717,
+      "engagements": 146,
+      "page_views": 64
+     },
+     {
+      "date": "2026-08-31",
+      "followers": 7467,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1815,
+      "engagements": 106,
+      "page_views": 92
+     }
+    ],
+    "posts": [
+     {
+      "date": "2026-08-27",
+      "type": "post",
+      "caption": "Sorprende a tus invitados con nuestros encantadores frasquitos de miel pura Guatebee, el recuerdo ideal para…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1073808092006593",
+      "image": "https://scontent-fra3-1.xx.fbcdn.net/v/t39.30808-6/787406128_1073807915339944_3567141795467232461_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ruixCcwna0kQ7kNvwEwawBa&_nc_oc=Adrp-vpsO_zfa1pGxcRoIaAqJMTpECjcx0v4U24Y7IJPdwYrGTiLUvhGcPPG9CSs9Ng&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=_xiEc5493zO0cM-aS5qz8w&_nc_tpa=Q5bMBQLPtjvWK2s4eOE91q0fISICJ-TfxvDX6HvmRprkahagNKZjq-1Loyb2spMC1nQlMgt_KqrXzQ60sA&oh=00_AQOMZ3tVW9vdkuz8Sjha3JYhDL5NqWi_9NZ48wdhaLBgSg&oe=6AC24679",
+      "reach": 690,
+      "engagement": 6,
+      "reactions": 5,
+      "comments": 1,
+      "clicks": 32,
+      "eng_rate": 0.008695652173913044
+     },
+     {
+      "date": "2026-08-01",
+      "type": "post",
+      "caption": "¡Regala dulzura y naturaleza en cada detalle! 🍯💐 Sorprende a tus invitados con nuestros encantadores…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1051192860934783",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-6/763193358_1050710937649642_3023657168027947888_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OTMLXmRN7GYQ7kNvwHy72SC&_nc_oc=AdrkdSy_iXkr0LxNk-nCriZ-qZZIbrwp_t7-XVK2Lh46iz-vjt7401RzvXZHBmLASKo&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=F332lJ2hrByaYHYcx4e96g&_nc_tpa=Q5bMBQIRouURLIcm6w2gD1t4ufxvH47MhzV2VyVqDGwqgl-CDiQnwu_iCd0WkPLl9YEKQrWMAQMC1_vZgg&oh=00_AQPqMCGp_zw68S3MVGFU4KxLmWeSjAodg23NeK93ZNRqAw&oe=6AC2346D",
+      "reach": 625,
+      "engagement": 7,
+      "reactions": 4,
+      "comments": 3,
+      "clicks": 27,
+      "eng_rate": 0.0112
+     },
+     {
+      "date": "2026-08-03",
+      "type": "post",
+      "caption": "¿Ya probaste nuestro polen de flores Guatebee? Es el superalimento perfecto para darle un toque crujiente y…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1052892860764783",
+      "image": "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/762715386_1050716114315791_3391259429387509953_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WVIpjX8Xu60Q7kNvwElXyxF&_nc_oc=Adp_kZS2MuElP6xY8rkCW7Q3NyZtzDqqgCOe3PTgh86sfIAj9I47l7Djka2B87jXu0c&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=UQd21uRrUPpsOqQ_TOhvKw&_nc_tpa=Q5bMBQKh6ojPrpY2KHZYlOJlJLP7HDT2kT3lixol3we_OXLxuN0JBnpCilz1OMXWl3-72O33Iz6Hedhx1Q&oh=00_AQPRX4V2SDAXv_eTjs9OmrZczYukbgZJfysjN0eP23j-Dw&oe=6AC22082",
+      "reach": 569,
+      "engagement": 2,
+      "reactions": 2,
+      "comments": 0,
+      "clicks": 3,
+      "eng_rate": 0.0035149384885764497
+     },
+     {
+      "date": "2026-08-15",
+      "type": "post",
+      "caption": "¡De la colmena directo a tu mesa! 🌾🧀🥖  Siente la textura única y el sabor inigualable de la miel en su estado…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1063522166368519",
+      "image": "https://scontent-fra3-1.xx.fbcdn.net/v/t39.30808-6/774468982_1061682903219112_6882373904947293354_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FJxY5PWdj-8Q7kNvwHAC7uX&_nc_oc=AdoSeaUmkGuFEuTK9KL299AlAOLLxo6zvDW7aJJoy1HxmgrwULLNjYSu0PKY4DEcu98&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=KNP1zTU6hgibAHdhrEPEbw&_nc_tpa=Q5bMBQJMupRReUov0Em_qfxN6_aJe-rFMk0Y0nO2_ZBi2ELLlF8g5dVuCxMC0LLtzx7HCMR4BPNRJDOz8w&oh=00_AQMIDL4eylVmSHHKsS5VVKrnwB-VRlbyeyrFu_x9ORPNKA&oe=6AC23AD3",
+      "reach": 513,
+      "engagement": 4,
+      "reactions": 4,
+      "comments": 0,
+      "clicks": 6,
+      "eng_rate": 0.007797270955165692
+     },
+     {
+      "date": "2026-08-05",
+      "type": "post",
+      "caption": "Protege tu sistema inmunológico con el poder de la naturaleza. 🛡️🐝  Con los cambios de clima, tu cuerpo…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1054848197235916",
+      "image": "https://scontent-fra3-1.xx.fbcdn.net/v/t39.30808-6/760242022_1050719967648739_2458881370141826127_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XGuPg7rot9QQ7kNvwFRN0LE&_nc_oc=AdqDHAO_BghUQmM1MNAvCtzX1WpEL5NvIJg0bmeF-mH2-Rep2ahZ7Mi-PvNlaT6hqVA&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=IZHCWJ6na4ToMvwlGoYGZQ&_nc_tpa=Q5bMBQLtagBeyP-kHtMRXEtEWricwWXBbiC-y-cgvSoWeyJg429cwMhv18MaZhTunlx-3uF4vuJjPlR1pw&oh=00_AQNVmN1qygUSZXeud0LtMIWvwnmEnH0-_kM8eCLUA5p1lw&oe=6AC23693",
+      "reach": 475,
+      "engagement": 3,
+      "reactions": 3,
+      "comments": 0,
+      "clicks": 1,
+      "eng_rate": 0.00631578947368421
+     },
+     {
+      "date": "2026-08-13",
+      "type": "post",
+      "caption": "¡El toque dulce y natural que tus mañanas necesitan! ✨🥞  Transforma tus desayunos diarios en una experiencia…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1061681406552595",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-6/773592656_1061680999885969_4130294050266767181_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Tl0sFbypIvAQ7kNvwGnCQvW&_nc_oc=Adq7v9PDOF9K3rerYoEVSJ1dTL7MbR8hwsioYVhJxkfmF43lgqDFk1CDxxjtGuLF2gs&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=ke9OAWCX4ujZ6E6v3H6Umw&_nc_tpa=Q5bMBQIuhT31hHmWqmBNa_u6urGptpVKG2pTmLG07h9zNFuOFS6OQi2VDL2JsPmR0nsKTf-81Jz1dTXDuQ&oh=00_AQPXCxWt9FVGXR3nxk2BTUiLvnYUpClr5Lb0Ue3V72oZ_w&oe=6AC253E1",
+      "reach": 471,
+      "engagement": 6,
+      "reactions": 6,
+      "comments": 0,
+      "clicks": 1,
+      "eng_rate": 0.012738853503184714
+     }
+    ],
+    "insights": {
+     "summary": "Agosto 2026: la página ganó +43 seguidores netos (51 nuevos, 8 dejaron de seguir), con 6 publicaciones y un alcance promedio de 2,372 personas al día.",
+     "wins": [
+      "La publicación que más movió: “Sorprende a tus invitados con nuestros encantadores…” (690 de alcance, 32 clics)."
+     ],
+     "watch": [
+      "Las publicaciones tienen poca interacción (0.8% del alcance). La interacción de la página viene sobre todo de los anuncios."
+     ],
+     "next": [
+      "Probar publicaciones con pregunta directa, encuestas o videos cortos para generar comentarios.",
+      "Repetir contenido de recuerdos para eventos: “Sorprende a tus invitados con nuestros…” generó 32 clics.",
+      "Publicar más seguido: van 6 publicaciones en 31 días."
+     ]
+    }
+   },
+   "2026-09": {
+    "label": "Septiembre 2026",
+    "partial": true,
+    "through": "2026-09-28",
+    "days": 28,
+    "totals": {
+     "followers": 7518,
+     "followers_start": 7468,
+     "new_followers": 53,
+     "unfollows": 2,
+     "reach_avg": 1952,
+     "reach_peak": 5192,
+     "engagements": 3570,
+     "page_views": 1962,
+     "posts": 7,
+     "post_clicks": 16,
+     "post_reach_avg": 315,
+     "post_eng_rate": 0.008605072463768116
+    },
+    "daily": [
+     {
+      "date": "2026-09-01",
+      "followers": 7468,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1789,
+      "engagements": 185,
+      "page_views": 112
+     },
+     {
+      "date": "2026-09-02",
+      "followers": 7470,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 2479,
+      "engagements": 212,
+      "page_views": 97
+     },
+     {
+      "date": "2026-09-03",
+      "followers": 7471,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 2158,
+      "engagements": 154,
+      "page_views": 90
+     },
+     {
+      "date": "2026-09-04",
+      "followers": 7470,
+      "new_followers": 0,
+      "unfollows": 1,
+      "reach": 1621,
+      "engagements": 124,
+      "page_views": 80
+     },
+     {
+      "date": "2026-09-05",
+      "followers": 7472,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1737,
+      "engagements": 142,
+      "page_views": 105
+     },
+     {
+      "date": "2026-09-06",
+      "followers": 7475,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 2081,
+      "engagements": 137,
+      "page_views": 86
+     },
+     {
+      "date": "2026-09-07",
+      "followers": 7477,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 2082,
+      "engagements": 124,
+      "page_views": 56
+     },
+     {
+      "date": "2026-09-08",
+      "followers": 7481,
+      "new_followers": 4,
+      "unfollows": 0,
+      "reach": 2167,
+      "engagements": 144,
+      "page_views": 90
+     },
+     {
+      "date": "2026-09-09",
+      "followers": 7482,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 2034,
+      "engagements": 102,
+      "page_views": 85
+     },
+     {
+      "date": "2026-09-10",
+      "followers": 7486,
+      "new_followers": 4,
+      "unfollows": 0,
+      "reach": 4217,
+      "engagements": 223,
+      "page_views": 96
+     },
+     {
+      "date": "2026-09-11",
+      "followers": 7488,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 5192,
+      "engagements": 209,
+      "page_views": 80
+     },
+     {
+      "date": "2026-09-12",
+      "followers": 7491,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 1990,
+      "engagements": 117,
+      "page_views": 64
+     },
+     {
+      "date": "2026-09-13",
+      "followers": 7493,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1483,
+      "engagements": 98,
+      "page_views": 39
+     },
+     {
+      "date": "2026-09-14",
+      "followers": 7493,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 969,
+      "engagements": 51,
+      "page_views": 16
+     },
+     {
+      "date": "2026-09-15",
+      "followers": 7494,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1948,
+      "engagements": 139,
+      "page_views": 76
+     },
+     {
+      "date": "2026-09-16",
+      "followers": 7495,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1842,
+      "engagements": 93,
+      "page_views": 43
+     },
+     {
+      "date": "2026-09-17",
+      "followers": 7496,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1787,
+      "engagements": 140,
+      "page_views": 53
+     },
+     {
+      "date": "2026-09-18",
+      "followers": 7496,
+      "new_followers": 1,
+      "unfollows": 1,
+      "reach": 1700,
+      "engagements": 126,
+      "page_views": 62
+     },
+     {
+      "date": "2026-09-19",
+      "followers": 7499,
+      "new_followers": 3,
+      "unfollows": 0,
+      "reach": 2182,
+      "engagements": 126,
+      "page_views": 52
+     },
+     {
+      "date": "2026-09-20",
+      "followers": 7499,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 1974,
+      "engagements": 111,
+      "page_views": 60
+     },
+     {
+      "date": "2026-09-21",
+      "followers": 7501,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1610,
+      "engagements": 95,
+      "page_views": 46
+     },
+     {
+      "date": "2026-09-22",
+      "followers": 7502,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1499,
+      "engagements": 128,
+      "page_views": 80
+     },
+     {
+      "date": "2026-09-23",
+      "followers": 7506,
+      "new_followers": 4,
+      "unfollows": 0,
+      "reach": 1516,
+      "engagements": 93,
+      "page_views": 76
+     },
+     {
+      "date": "2026-09-24",
+      "followers": 7508,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1562,
+      "engagements": 125,
+      "page_views": 82
+     },
+     {
+      "date": "2026-09-25",
+      "followers": 7510,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1264,
+      "engagements": 97,
+      "page_views": 43
+     },
+     {
+      "date": "2026-09-26",
+      "followers": 7511,
+      "new_followers": 1,
+      "unfollows": 0,
+      "reach": 1337,
+      "engagements": 95,
+      "page_views": 42
+     },
+     {
+      "date": "2026-09-27",
+      "followers": 7516,
+      "new_followers": 5,
+      "unfollows": 0,
+      "reach": 1178,
+      "engagements": 99,
+      "page_views": 97
+     },
+     {
+      "date": "2026-09-28",
+      "followers": 7518,
+      "new_followers": 2,
+      "unfollows": 0,
+      "reach": 1253,
+      "engagements": 81,
+      "page_views": 54
+     }
+    ],
+    "posts": [
+     {
+      "date": "2026-09-04",
+      "type": "post",
+      "caption": "Tres floraciones únicas en un solo empaque para endulzar tus mañanas y desayunos. Descubre los matices de la…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1080516068002462",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-6/790392287_1078957758158293_2663078331872255708_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=35YxA7OlwKkQ7kNvwHiY1gv&_nc_oc=AdrXMEcRRW5eBGC-OO9g6gQYy5aztzBzQqFZQ4x5nRjkcWb44lEcQe3h73mhYg40wGU&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=MdNjeAD0_akDOEUbFtVWEA&_nc_tpa=Q5bMBQIqbDhEFtUv1yXc-UZKow5sB3gTfy2kO25zmy0nc3QQWyRFAN59elfaofvkKZ_SMQHAIDXAQt2ZdQ&oh=00_AQMAs4kxd7_1CaU2aGY1eqD6KG1xqcr3dgFhAl4WcRLQFA&oe=6AC22E4D",
+      "reach": 419,
+      "engagement": 1,
+      "reactions": 1,
+      "comments": 0,
+      "clicks": 2,
+      "eng_rate": 0.002386634844868735
+     },
+     {
+      "date": "2026-09-06",
+      "type": "post",
+      "caption": "Fin de semana con un toque cítrico y vibrante en tus limonadas, tés y bebidas favoritas con nuestra miel…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1082427994477936",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-6/785146679_1078961074824628_8452126456513022848_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vftHVSLfSiQQ7kNvwE9e8wg&_nc_oc=AdoI5PsTNNqfc7b3xBU-0NdSzSxKtUomS6NqI67_f65dI-bCq4soGaWYnldf_uwoEZ0&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=GApzbrMxlnj5AWL-Y8AgIQ&_nc_tpa=Q5bMBQK_AdUq0qZQPboUtN9ajeEcjQjTeurZXKVdG9zfXlrx7bfMVy3WE7u2qbIKGva67DRjRzMDe3sqfQ&oh=00_AQM3VKF8PoumJ8C3XDLwwKeFpL1Tz15Dql1RKq-wG0JYMA&oe=6AC23B42",
+      "reach": 409,
+      "engagement": 2,
+      "reactions": 2,
+      "comments": 0,
+      "clicks": 3,
+      "eng_rate": 0.004889975550122249
+     },
+     {
+      "date": "2026-09-02",
+      "type": "post",
+      "caption": "Nuestra miel con chile cobanero le da el toque picante y dulce perfecto a tus pizzas, sliders y bocadillos…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1078956814825054",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-6/786888780_1078955838158485_2508094019555199249_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=i7XRbtkxQdwQ7kNvwGoc7_O&_nc_oc=AdqKpH7qO1u9Xw2sOEIB5Aiz0RcQ-18WVD2D47tjoHb5ATVPfPJLvyRzedazqJqciQU&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=6YZuD7QSKPdyS9eZEElXeg&_nc_tpa=Q5bMBQKC6VAoNdIyaGCzi2OQ5YAtWWCYUF4vJ2SIoDrXZYxSvUOiFm9Bbjm4wk73DMWylA_BUSRw8wNppQ&oh=00_AQNqhEoA9rkd3-i1oeAJg_mRsrT9UlVoUXOpmOevcPaRtA&oe=6AC22787",
+      "reach": 403,
+      "engagement": 3,
+      "reactions": 2,
+      "comments": 0,
+      "clicks": 2,
+      "eng_rate": 0.007444168734491315
+     },
+     {
+      "date": "2026-09-08",
+      "type": "post",
+      "caption": "Rendimiento, pureza y el mejor sabor para consentir a tus clientes. Nuestro formato de medio galón de miel…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1084386614282074",
+      "image": "https://scontent-fra3-1.xx.fbcdn.net/v/t39.30808-6/786853771_1078971131490289_3924564406171242043_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6kwc0aZMEVwQ7kNvwH5F487&_nc_oc=AdpcfiDq6eGWMMG46PtmRY6zdOymz_KqPTJg7T2kp2jvzE1Hl8eeorqUnW-HiF-3WyE&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=gPx2PQ8Kv67DGqPJwTbIaw&_nc_tpa=Q5bMBQId726PzVrNxkFq8pwUmbnJN3GEb-H7r49GUCT8j14aSLuTKMyOipCpLmAmWhIzK6EThtOP3XlrRA&oh=00_AQM17uQtvyWyKOVPbNXUKyNWxZ9YBpxdzZl9Sq_RRABAqA&oe=6AC23B15",
+      "reach": 343,
+      "engagement": 4,
+      "reactions": 3,
+      "comments": 1,
+      "clicks": 4,
+      "eng_rate": 0.011661807580174927
+     },
+     {
+      "date": "2026-09-13",
+      "type": "post",
+      "caption": "¡Un superalimento natural para recargar tus días! Agrega una lluvia de vitalidad, proteína y sabor a tus…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1088760547178014",
+      "image": "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/783898813_1078983074822428_4726377518582425340_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vsdqLuvusioQ7kNvwHfpS4a&_nc_oc=AdqYTgUdyW5uDTFL9YbMan6TyuBQpuVOo_0HTO9wIEx7YTmnvb_rmre0pqeBfmWSadA&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=OrsORdnSKMUxsQCyQH2GwA&_nc_tpa=Q5bMBQK0yiQBcBE0Dp73WcJcNMolmC7S8z5BHhh1qN4Bnm8MwzHB8Q3OkMgdVbyO--kt3puxKOe9ZJjf4Q&oh=00_AQP4EPcn3vsMAIi5soYvGi_g3fYYhT2HcaL2SRmBFfHzTw&oe=6AC22580",
+      "reach": 278,
+      "engagement": 3,
+      "reactions": 3,
+      "comments": 0,
+      "clicks": 4,
+      "eng_rate": 0.01079136690647482
+     },
+     {
+      "date": "2026-09-10",
+      "type": "post",
+      "caption": "¡Poder natural en cada cucharada! La combinación perfecta de miel pura con trozos de jengibre te ayuda a…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1086231670764235",
+      "image": "https://scontent-fra3-2.xx.fbcdn.net/v/t39.30808-6/790457657_1078975211489881_8922372241039887866_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AyhqDMTHqZsQ7kNvwFOqSXC&_nc_oc=AdoI8rGoGFD1SD_CEr-Lx2F4pLs64tqMFylwffqimYSZCL3cyDkIbjNgpUL7YXUqqjo&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=BIb6YTh_Re7JFX6kIPrbdA&_nc_tpa=Q5bMBQLe55UWOY47zlivhFB7pgqGNiv10onjRD24ePNq5lXKWB5ZZcc6XLYKx3uYHmhbuxIImw2kNhO1Gg&oh=00_AQNb9qGnj8soXezHFIvlhrkyhQTfLRHf-TRBIKzTx0gsPA&oe=6AC22E0E",
+      "reach": 188,
+      "engagement": 3,
+      "reactions": 3,
+      "comments": 0,
+      "clicks": 0,
+      "eng_rate": 0.015957446808510637
+     },
+     {
+      "date": "2026-09-15",
+      "type": "post",
+      "caption": "¡Feliz Día de la Independencia, Guatemala! Hoy celebramos la riqueza de nuestra tierra, la pasión de nuestra…",
+      "permalink": "https://www.facebook.com/1103591035694965/posts/1090498267004242",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-6/791197145_1078981388155930_6169829310799410619_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9bJTd-CPksgQ7kNvwGb0UFo&_nc_oc=Adq3-43ptSGnl-LLZ_5eFcgdYUosfO-6a8NzQuG5_-xIdeKounuXHEwa96JbPUISIVw&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=QQUCdSoonGWNoZ_-CwVNSw&_nc_tpa=Q5bMBQJy9eeRaY7Jf8zYkzowZk1lhgmyTW5mfBtx4RpH5WpjqPlr50OjSKy2NaW8TealyuUkrTEamD2BFw&oh=00_AQPoLsaux_ro22816x8CkaJbJHEL5MZX_vf6XoiUm3EjFg&oe=6AC2503D",
+      "reach": 168,
+      "engagement": 3,
+      "reactions": 3,
+      "comments": 0,
+      "clicks": 1,
+      "eng_rate": 0.017857142857142856
+     }
+    ],
+    "insights": {
+     "summary": "Septiembre 2026 (en curso, datos al 28): la página ganó +51 seguidores netos (53 nuevos, 2 dejaron de seguir), con 7 publicaciones y un alcance promedio de 1,952 personas al día.",
+     "wins": [
+      "Los seguidores nuevos por día subieron de 1.6 a 1.9.",
+      "La publicación que más movió: “Rendimiento, pureza y el mejor sabor para consentir a tus…” (343 de alcance, 4 clics)."
+     ],
+     "watch": [
+      "El alcance promedio por publicación bajó 43%: de 557 a 315 personas.",
+      "Las publicaciones tienen poca interacción (0.9% del alcance). La interacción de la página viene sobre todo de los anuncios.",
+      "El pico de alcance fue el 11 (5,192 personas); el alcance de la página incluye lo que traen los anuncios."
+     ],
+     "next": [
+      "Probar publicaciones con pregunta directa, encuestas o videos cortos para generar comentarios.",
+      "Publicar más seguido: van 7 publicaciones en 28 días."
+     ]
+    }
+   }
   }
  }
 }
