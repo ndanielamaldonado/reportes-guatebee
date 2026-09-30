@@ -81,9 +81,19 @@ a.creative:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .read h3::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--c)}
 .read ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:14px}
 .summary{font:500 18px/1.45 var(--display);margin:0;max-width:70ch;text-wrap:pretty}
-.tabs{display:flex;gap:4px}
+.tabs{display:flex;flex-wrap:wrap;gap:4px}
 .tabs button{font:500 12px var(--body);padding:5px 10px;border-radius:6px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
 .tabs button[aria-pressed="true"]{color:var(--fg);background:var(--grid)}
+.stack{display:grid;gap:28px}
+.view{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+.view button{font:600 15px var(--body);padding:10px 16px;border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);cursor:pointer;margin-bottom:-1px}
+.view button[aria-pressed="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.view button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.follow{display:grid;gap:6px;align-content:start}
+.follow .big{font:700 44px/1 var(--display);font-variant-numeric:tabular-nums}
+.follow .handle{color:var(--muted);font-size:13px}
+.ad .cap{font-size:13px;line-height:1.35;color:var(--fg);overflow-wrap:anywhere}
+.ad .date{font:500 11px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
 footer{color:var(--muted);font-size:12px}
 .empty{color:var(--muted);padding:40px 0;text-align:center}
@@ -97,13 +107,19 @@ footer{color:var(--muted);font-size:12px}
 <div class="wrap">
   <header>
     <div>
-      <div class="eyebrow">Meta Ads · Facebook e Instagram</div>
+      <div class="eyebrow" id="eyebrow">Meta Ads · Facebook e Instagram</div>
       <h1>Guatebee <span id="mlabel">—</span></h1>
       <div class="meta" id="meta">Cargando datos…</div>
     </div>
     <div class="months" id="months" role="group" aria-label="Mes del reporte"></div>
   </header>
 
+  <nav class="view" id="view" aria-label="Sección del reporte">
+    <button data-v="paid" aria-pressed="true">Pauta</button>
+    <button data-v="org" aria-pressed="false">Orgánico</button>
+  </nav>
+
+  <div class="stack" id="paidView">
   <section class="kpis" id="kpis" aria-label="Resumen del mes"></section>
 
   <section class="card" id="readcard">
@@ -140,6 +156,44 @@ footer{color:var(--muted);font-size:12px}
     <p class="sub">Ordenados por inversión. El color del costo por conversación lo compara con el promedio del mes: verde, mejor; rojo, 50% más caro o más.</p>
     <div class="ads" id="tads"></div>
   </section>
+  </div>
+
+  <div class="stack" id="orgView" hidden>
+  <section class="kpis" id="okpis" aria-label="Resumen orgánico del mes"></section>
+
+  <section class="card" id="oreadcard">
+    <p class="summary" id="osummary"></p>
+    <div class="read" id="oread"></div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="row">
+        <h2>Instagram día a día</h2>
+        <div class="tabs" id="otabs" role="group" aria-label="Métrica diaria orgánica">
+          <button data-m="reach" aria-pressed="true">Alcance</button>
+          <button data-m="views" aria-pressed="false">Visualizaciones</button>
+          <button data-m="interactions" aria-pressed="false">Interacciones</button>
+          <button data-m="new_followers" aria-pressed="false">Seguidores nuevos</button>
+        </div>
+      </div>
+      <div class="chart" id="odaily"></div>
+    </div>
+    <div class="card follow">
+      <h2>Seguidores</h2>
+      <div class="big" id="ofollowers">—</div>
+      <div class="handle" id="ohandle"></div>
+      <p class="sub" id="ofnote"></p>
+      <p class="sub">Facebook orgánico se agrega cuando la página esté conectada en Windsor.ai.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Publicaciones del mes</h2>
+    <p class="sub">Ordenadas por alcance. La tasa de interacción es interacciones ÷ alcance de cada publicación.</p>
+    <div class="ads" id="oposts"></div>
+  </section>
+  </div>
 
   <footer id="foot"></footer>
 </div>
@@ -240,9 +294,7 @@ function renderTables(m){
   const c=[...m.campaigns].sort((a,b)=>b.spend-a.spend);
   $('#tcamp').innerHTML=`<thead><tr><th>Campaña</th><th>Objetivo</th><th>Inversión</th><th>Alcance</th><th>Impresiones</th><th>Clics</th><th>CTR</th><th>Conversaciones</th><th>Costo / conv.</th></tr></thead><tbody>`+
     (c.length?c.map(r=>`<tr><td>${r.name}</td><td>${OBJ[r.objective]||r.objective}</td><td>${usd(r.spend)}</td><td>${num(r.reach)}</td><td>${num(r.impressions)}</td><td>${num(r.clicks)}</td><td>${pct(r.ctr)}</td><td>${num(r.conversations)}</td><td>${effTag(r.conversations?r.spend/r.conversations:null,avg)}</td></tr>`).join(''):'<tr><td colspan="9" class="empty">Sin campañas activas</td></tr>')+'</tbody>';
-  const ICON={video:'<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="var(--surface)"/><path d="M19 15l15 9-15 9z" fill="var(--fg)"/></svg>',
-    imagen:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="40" height="32" rx="4" fill="var(--surface)"/><circle cx="16" cy="19" r="4" fill="var(--accent)"/><path d="M8 36l11-11 7 7 6-5 8 9z" fill="var(--fg)"/></svg>',
-    otros:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="4" y="26" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="26" width="18" height="14" rx="3" fill="var(--surface)"/></svg>'};
+  const ICON=ICONS;
   const a=[...m.ads].sort((x,y)=>y.spend-x.spend);
   $('#tads').innerHTML=a.length?a.map(r=>{
     const f=r.format||'otros', lbl=r.format==='video'?'Video':r.format==='imagen'?'Imagen':'Grupo';
@@ -256,13 +308,72 @@ function renderTables(m){
       <dt>Conversaciones</dt><dd>${num(r.conversations)}</dd><dt>Costo / conv.</dt><dd>${effTag(r.conversations?r.spend/r.conversations:null,avg)}</dd></dl></div></article>`}).join('')
     :'<div class="empty">Sin anuncios</div>';
 }
+const ICONS={video:'<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="var(--surface)"/><path d="M19 15l15 9-15 9z" fill="var(--fg)"/></svg>',
+    imagen:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="40" height="32" rx="4" fill="var(--surface)"/><circle cx="16" cy="19" r="4" fill="var(--accent)"/><path d="M8 36l11-11 7 7 6-5 8 9z" fill="var(--fg)"/></svg>',
+    otros:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="4" y="26" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="26" width="18" height="14" rx="3" fill="var(--surface)"/></svg>'};
+let view='paid',ometric='reach';
+function odelta(a,b,lowerBetter){return delta(a,b,lowerBetter)}
+function renderOrg(key){
+  const O=DATA.organic; const ks=Object.keys(DATA.months).sort(),i=ks.indexOf(key);
+  const m=O&&O.months?O.months[key]:null, p=O&&O.months&&i>0?O.months[ks[i-1]]:null;
+  if(!m){$('#okpis').innerHTML='<div class="kpi"><span class="lbl">Sin datos orgánicos para este mes</span></div>';$('#oreadcard').hidden=true;$('#odaily').innerHTML='';$('#oposts').innerHTML='';return}
+  const t=m.totals,pt=p?p.totals:null,IG=O.instagram||{};
+  const rate=(x,mm)=>mm?x/Math.max(mm.days,1):null;
+  const asof=IG.as_of?new Date(IG.as_of+'T12:00'):null;
+  const nfFull=t.new_followers!=null&&t.new_followers_days>=m.days-2;
+  const items=[
+    ['Seguidores en Instagram',num(IG.followers),`<span class="delta flat">al ${asof?asof.getDate()+' '+MES[asof.getMonth()]:'—'}</span>`,true],
+    ['Seguidores nuevos',t.new_followers==null?'—':num(t.new_followers),nfFull&&pt&&pt.new_followers!=null&&pt.new_followers_days>=p.days-2?delta(t.new_followers/m.days,pt.new_followers/p.days):`<span class="delta flat">${t.new_followers_days||0} de ${m.days} días con dato</span>`,true],
+    ['Alcance promedio diario',num(t.reach_avg),delta(t.reach_avg,pt&&pt.reach_avg)],
+    ['Visualizaciones',num(t.views),delta(rate(t.views,m),pt&&rate(pt.views,p))],
+    ['Interacciones',num(t.interactions),delta(rate(t.interactions,m),pt&&rate(pt.interactions,p))],
+    ['Tasa de interacción',t.post_eng_rate==null?'—':pct(t.post_eng_rate),pt&&pt.post_eng_rate?delta(t.post_eng_rate,pt.post_eng_rate):'<span class="delta flat">por publicación</span>'],
+    ['Guardados y compartidos',num(t.saves+t.shares),delta(rate(t.saves+t.shares,m),pt&&rate(pt.saves+pt.shares,p))],
+    ['Publicaciones',num(t.posts),`<span class="delta flat">${t.posts&&m.days?(t.posts/m.days*7).toFixed(1):'0'} por semana</span>`],
+  ];
+  $('#okpis').innerHTML=items.map(([l,v,d,h])=>`<div class="kpi${h?' hero':''}"><span class="lbl">${l}</span><span class="val">${v}</span>${d}</div>`).join('');
+  const I=m.insights; $('#oreadcard').hidden=!I;
+  if(I){$('#osummary').textContent=I.summary;
+    const blk=(tt,arr,c)=>arr&&arr.length?`<div style="--c:${c}"><h3>${tt}</h3><ul>${arr.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:'';
+    $('#oread').innerHTML=blk('Lo que funcionó',I.wins,'var(--good)')+blk('A vigilar',I.watch,'var(--bad)')+blk('Siguientes pasos',I.next,'var(--accent)');}
+  $('#ofollowers').textContent=num(IG.followers);
+  $('#ohandle').textContent=IG.username?'@'+IG.username+' · Instagram':'Instagram';
+  $('#ofnote').textContent=IG.media_count?`${num(IG.media_count)} publicaciones en total. Instagram solo da seguidores nuevos de los últimos 30 días; el historial se va guardando desde ahora.`:'';
+  renderODaily(key);
+  $('#oposts').innerHTML=m.posts.length?m.posts.map(r=>{
+    const lbl={reel:'Reel',carrusel:'Carrusel',imagen:'Imagen'}[r.type]||'Post';
+    const img=r.image?`<img src="${r.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:'';
+    const f=r.type==='reel'?'video':'imagen';
+    const glyph=`<span class="play${f==='video'?'':' pic'}" style="position:relative">${ICONS[f]}</span>`;
+    const d=new Date(r.date+'T12:00');
+    return `<article class="ad"><a class="creative" href="${r.permalink}" target="_blank" rel="noopener" aria-label="Ver publicación en Instagram">${img}<span class="fmt">${lbl}</span>${glyph}<span class="open">Ver en Instagram ↗</span></a>
+      <div class="body"><div class="date">${d.getDate()} ${MES[d.getMonth()]}</div><div class="cap">${r.caption||''}</div>
+      <dl><dt>Alcance</dt><dd>${num(r.reach)}</dd><dt>Visualizaciones</dt><dd>${num(r.views)}</dd><dt>Me gusta</dt><dd>${num(r.likes)}</dd>
+      <dt>Guardados</dt><dd>${num(r.saves)}</dd><dt>Compartidos</dt><dd>${num(r.shares)}</dd><dt>Tasa de interacción</dt><dd>${pct(r.eng_rate)}</dd></dl></div></article>`}).join('')
+    :'<div class="empty">Sin publicaciones este mes</div>';
+}
+function renderODaily(key){
+  const m=DATA.organic&&DATA.organic.months[key]; if(!m)return;
+  const [yy,mm]=key.split('-').map(Number);const by=Object.fromEntries(m.daily.map(d=>[d.date,d]));const days=new Date(yy,mm,0).getDate();const pts=[];
+  for(let d=1;d<=days;d++){const ds=`${key}-${String(d).padStart(2,'0')}`;if(m.partial&&m.through&&ds>m.through)break;const r=by[ds];
+    const v=r?r[ometric]:null;
+    pts.push({v:v||0,name:`${d} ${MES[mm-1]}`,tick:(d===1||d%5===0)?d:'',hi:true,extra:r?(ometric==='new_followers'&&v==null?'Sin dato (Instagram solo guarda 30 días)':`${num(r.reach)} alcance · ${num(r.views)} visualizaciones · ${num(r.interactions)} interacciones`):'Sin dato'});}
+  bars($('#odaily'),pts,v=>num(v),{label:'Serie diaria de Instagram'});
+}
+function setView(v){
+  view=v;document.querySelectorAll('#view button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
+  $('#paidView').hidden=v!=='paid';$('#orgView').hidden=v!=='org';
+  $('#eyebrow').textContent=v==='paid'?'Meta Ads · Facebook e Instagram':'Orgánico · Instagram';
+  try{localStorage.setItem('gb-view',v)}catch(e){}
+  if(cur){show(cur)}
+}
 function show(key){
   cur=key; const ks=Object.keys(DATA.months).sort(),i=ks.indexOf(key),m=DATA.months[key],p=i>0?DATA.months[ks[i-1]]:null;
   document.querySelectorAll('#months button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===key));
   $('#mlabel').textContent=m.label;
   const th=m.through?new Date(m.through+'T12:00'):null;
-  $('#meta').innerHTML=(m.partial?`<span class="pill">Parcial · datos al ${th.getDate()} ${MES[th.getMonth()]}</span> `:'')+`Comparado con ${p?p.label.toLowerCase():'—'} · cifras en ${DATA.account.currency}`;
-  renderKpis(m,p);renderRead(m);renderDaily(key);renderCpc(key);renderTables(m);
+  $('#meta').innerHTML=(m.partial?`<span class="pill">Parcial · datos al ${th.getDate()} ${MES[th.getMonth()]}</span> `:'')+`Comparado con ${p?p.label.toLowerCase():'—'} · `+(view==='org'?'Instagram @'+((DATA.organic&&DATA.organic.instagram&&DATA.organic.instagram.username)||'guatebee'):`cifras en ${DATA.account.currency}`);
+  renderKpis(m,p);renderRead(m);renderDaily(key);renderCpc(key);renderTables(m);renderOrg(key);
   try{localStorage.setItem('gb-month',key)}catch(e){}
 }
 function init(d){
@@ -271,10 +382,15 @@ function init(d){
   $('#months').addEventListener('click',e=>{const b=e.target.closest('button');if(b)show(b.dataset.k)});
   $('#dtabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;metric=b.dataset.m;
     document.querySelectorAll('#dtabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderDaily(cur)});
+  $('#view').addEventListener('click',e=>{const b=e.target.closest('button');if(b)setView(b.dataset.v)});
+  $('#otabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ometric=b.dataset.m;
+    document.querySelectorAll('#otabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderODaily(cur)});
   const up=new Date(d.updated+'T12:00');
-  $('#foot').textContent=`Fuente: ${d.account.platform} vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}. Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
+  $('#foot').textContent=`Fuente: Meta Ads e Instagram vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}. Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
   let saved=null;try{saved=localStorage.getItem('gb-month')}catch(e){}
   show(ks.includes(saved)?saved:ks[ks.length-1]);
+  let sv=location.hash==='#organico'?'org':null;if(!sv){try{sv=localStorage.getItem('gb-view')}catch(e){}}
+  setView(sv==='org'?'org':'paid');
 }
 fetch('data.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(init)
   .catch(()=>{$('#meta').textContent='No se pudieron cargar los datos. Recarga la página.'});

@@ -15,24 +15,28 @@ import urllib.request
 ACCOUNT_ID = "798050121603811"
 START_MONTH = (2026, 8)
 TZ = dt.timezone(dt.timedelta(hours=-6))  # America/Guatemala, sin horario de verano
-BASE = "https://connectors.windsor.ai/facebook"
+IG_ACCOUNT = "17841405733522791"
 MESES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
          "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 CONV = "actions_onsite_conversion_messaging_conversation_started_7d"
 DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data.json")
 
 
-def fetch(fields, date_from, date_to):
+def fetch(fields, date_from=None, date_to=None, connector="facebook", account=None, preset=None):
     params = {
         "api_key": os.environ["WINDSOR_API_KEY"],
         "fields": ",".join(fields),
-        "date_from": date_from,
-        "date_to": date_to,
-        "select_accounts": ACCOUNT_ID,
+        "select_accounts": account or ACCOUNT_ID,
     }
-    url = BASE + "?" + urllib.parse.urlencode(params)
+    if preset:
+        params["date_preset"] = preset
+    else:
+        params["date_from"], params["date_to"] = date_from, date_to
+    url = f"https://connectors.windsor.ai/{connector}?" + urllib.parse.urlencode(params)
     with urllib.request.urlopen(url, timeout=120) as r:
         body = json.load(r)
+    if isinstance(body, dict) and body.get("error"):
+        raise RuntimeError(str(body.get("error"))[:300])
     rows = body.get("data", body) if isinstance(body, dict) else body
     if not isinstance(rows, list):
         raise RuntimeError(f"Respuesta inesperada de Windsor: {str(body)[:300]}")
@@ -191,6 +195,154 @@ def insights(cur, prev):
     return {"summary": summary, "wins": wins[:3], "watch": watch[:3], "next": nxt[:3]}
 
 
+# ---------------------------------------------------------------- Orgánico (Instagram)
+
+def ig(fields, **kw):
+    return fetch(fields, connector="instagram", account=IG_ACCOUNT, **kw)
+
+
+def build_ig_month(y, m, until, new_followers):
+    start = dt.date(y, m, 1)
+    last = dt.date(y, m, calendar.monthrange(y, m)[1])
+    end = min(last, until)
+    df, dt_ = start.isoformat(), end.isoformat()
+    partial = end < last
+
+    daily = []
+    for r in ig(["date", "reach", "views", "total_interactions"], date_from=df, date_to=dt_):
+        d = r.get("date")
+        daily.append({"date": d, "reach": int(n(r.get("reach"))), "views": int(n(r.get("views"))),
+                      "interactions": int(n(r.get("total_interactions"))),
+                      "new_followers": new_followers.get(d)})
+    daily.sort(key=lambda x: x["date"])
+
+    t = (ig(["accounts_engaged", "total_interactions", "likes", "comments", "saves", "shares", "views",
+             "profile_links_taps"], date_from=df, date_to=dt_) or [{}])[0]
+    nf_days = [x["new_followers"] for x in daily if x["new_followers"] is not None]
+    reach_days = [x["reach"] for x in daily]
+
+    posts = []
+    for r in ig(["media_id", "timestamp", "media_type", "media_product_type", "media_caption", "media_permalink",
+                 "media_url", "media_thumbnail_url", "media_reach", "media_views", "media_engagement",
+                 "media_saved", "media_shares", "media_total_like_count", "media_total_comments_count"],
+                date_from=df, date_to=dt_):
+        ts = (r.get("timestamp") or "")[:10]
+        if not ts.startswith(f"{y}-{m:02d}") or (r.get("media_product_type") or "").upper() in ("AD", "STORY"):
+            continue
+        cap = (r.get("media_caption") or "").strip().split("\n")[0]
+        reach = int(n(r.get("media_reach")))
+        eng = int(n(r.get("media_engagement")))
+        mtype = (r.get("media_type") or "").upper()
+        posts.append({
+            "date": ts, "type": {"VIDEO": "reel", "REEL": "reel", "CAROUSEL_ALBUM": "carrusel"}.get(mtype, "imagen"),
+            "caption": short(cap, 110), "permalink": r.get("media_permalink"),
+            "image": r.get("media_thumbnail_url") or (r.get("media_url") if mtype != "VIDEO" else None),
+            "reach": reach, "views": int(n(r.get("media_views"))), "engagement": eng,
+            "likes": int(n(r.get("media_total_like_count"))), "comments": int(n(r.get("media_total_comments_count"))),
+            "saves": int(n(r.get("media_saved"))), "shares": int(n(r.get("media_shares"))),
+            "eng_rate": eng / reach if reach else 0,
+        })
+    posts.sort(key=lambda p: -p["reach"])
+    pr = sum(p["reach"] for p in posts)
+    totals = {
+        "reach_avg": round(sum(reach_days) / len(reach_days)) if reach_days else 0,
+        "reach_peak": max(reach_days) if reach_days else 0,
+        "views": int(n(t.get("views"))), "interactions": int(n(t.get("total_interactions"))),
+        "likes": int(n(t.get("likes"))), "comments": int(n(t.get("comments"))),
+        "saves": int(n(t.get("saves"))), "shares": int(n(t.get("shares"))),
+        "profile_taps": int(n(t.get("profile_links_taps"))),
+        "new_followers": sum(nf_days) if nf_days else None, "new_followers_days": len(nf_days),
+        "posts": len(posts), "post_eng_rate": (sum(p["engagement"] for p in posts) / pr) if pr else None,
+    }
+    return {"label": f"{MESES[m-1]} {y}", "partial": partial, "through": dt_ if partial else None,
+            "days": len(daily), "totals": totals, "daily": daily, "posts": posts}
+
+
+def short(txt, k):
+    txt = (txt or "").rstrip("…")
+    if len(txt) <= k:
+        return txt
+    return txt[:k].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+
+
+def ig_insights(cur, prev):
+    t = cur["totals"]
+    wins, watch, nxt = [], [], []
+    en_curso = f" (en curso, datos al {int(cur['through'][8:])})" if cur["partial"] else ""
+    summary = (f"{cur['label']}{en_curso}: {t['posts']} publicaciones, alcance promedio de {t['reach_avg']:,} cuentas "
+               f"al día y {t['interactions']:,} interacciones")
+    if t["new_followers"] is not None and t["new_followers_days"] >= cur["days"] - 2:
+        summary += f"; {t['new_followers']:,} seguidores nuevos"
+    summary += "."
+    if prev:
+        p = prev["totals"]
+        if p["reach_avg"]:
+            ch = (t["reach_avg"] - p["reach_avg"]) / p["reach_avg"]
+            if ch >= 0.10:
+                wins.append(f"El alcance promedio diario subió {ch*100:.0f}% (de {p['reach_avg']:,} a {t['reach_avg']:,} cuentas).")
+            elif ch <= -0.10:
+                watch.append(f"El alcance promedio diario bajó {abs(ch)*100:.0f}% (de {p['reach_avg']:,} a {t['reach_avg']:,} cuentas).")
+        pi = p["interactions"] / max(prev["days"], 1)
+        ci = t["interactions"] / max(cur["days"], 1)
+        if pi and (ci - pi) / pi >= 0.15:
+            wins.append(f"Las interacciones por día subieron de {pi:.1f} a {ci:.1f}.")
+        elif pi and (ci - pi) / pi <= -0.15:
+            watch.append(f"Las interacciones por día bajaron de {pi:.1f} a {ci:.1f}.")
+    peak = max(cur["daily"], key=lambda x: x["reach"]) if cur["daily"] else None
+    if peak and t["reach_avg"] and peak["reach"] >= 2.5 * t["reach_avg"]:
+        watch.append(f"El pico de alcance fue el {int(peak['date'][8:])} ({peak['reach']:,} cuentas). Si coincide con más pauta, parte de ese alcance viene de los anuncios.")
+    if cur["posts"]:
+        best = max(cur["posts"], key=lambda x: x["engagement"])
+        wins.append(f"La publicación con más interacción: “{short(best['caption'], 60)}” ({best['engagement']} interacciones, {best['reach']:,} de alcance).")
+        sv = sorted(cur["posts"], key=lambda x: -(x["saves"] + x["shares"]))[0]
+        if sv["saves"] + sv["shares"] >= 5:
+            nxt.append(f"Hacer más contenido como “{short(sv['caption'], 50)}”: fue la más guardada y compartida ({sv['saves']} guardados, {sv['shares']} compartidos).")
+    if t["post_eng_rate"] is not None and t["post_eng_rate"] < 0.02:
+        watch.append(f"La tasa de interacción por publicación es de {t['post_eng_rate']*100:.1f}%: la gente ve el contenido pero interactúa poco.")
+        nxt.append("Agregar preguntas, encuestas o llamados a guardar/compartir en los textos para subir la interacción.")
+    if t["posts"] and cur["days"] and t["posts"] / cur["days"] * 7 < 3:
+        nxt.append(f"Subir la frecuencia de publicación: van {t['posts']} publicaciones en {cur['days']} días.")
+    if not any("reel" == p_["type"] for p_ in cur["posts"]):
+        nxt.append("Probar reels: este mes todas las publicaciones fueron imágenes, y los reels suelen alcanzar a más gente nueva.")
+    return {"summary": summary, "wins": wins[:3], "watch": watch[:3], "next": nxt[:3]}
+
+
+def update_organic(data, keys, now, until):
+    org = data.get("organic") or {}
+    igd = org.get("instagram") or {}
+    history = igd.get("follower_history", {})
+    new_f = igd.get("new_followers", {})
+    try:
+        info = ig(["followers_count", "media_count", "username"], preset="last_7d")
+        if info:
+            igd["username"] = info[0].get("username")
+            igd["followers"] = int(n(info[0].get("followers_count")))
+            igd["media_count"] = int(n(info[0].get("media_count")))
+            history[now.isoformat()] = igd["followers"]
+        for r in ig(["date", "follower_count_1d"], preset="last_30d"):
+            if r.get("date") and r.get("date") <= until.isoformat():
+                new_f[r["date"]] = int(n(r.get("follower_count_1d")))
+    except Exception as e:
+        print(f"Instagram (perfil/seguidores): {e}", file=sys.stderr)
+    igd["follower_history"], igd["new_followers"], igd["as_of"] = history, new_f, now.isoformat()
+
+    months, prev = {}, None
+    old = org.get("months", {})
+    for y, m in keys:
+        k = f"{y}-{m:02d}"
+        try:
+            e = build_ig_month(y, m, until, new_f)
+            e["insights"] = ig_insights(e, prev)
+        except Exception as ex:
+            print(f"Instagram {k}: {ex}", file=sys.stderr)
+            if k not in old:
+                continue
+            e = old[k]
+        months[k] = e
+        prev = e
+    data["organic"] = {"instagram": igd, "months": months}
+
+
 def main():
     now = dt.datetime.now(TZ).date()
     until = now - dt.timedelta(days=1)
@@ -226,6 +378,7 @@ def main():
         prev = entry
 
     data["months"] = months
+    update_organic(data, keys, now, until)
     data["updated"] = now.isoformat()
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
