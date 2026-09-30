@@ -16,6 +16,7 @@ ACCOUNT_ID = "798050121603811"
 START_MONTH = (2026, 8)
 TZ = dt.timezone(dt.timedelta(hours=-6))  # America/Guatemala, sin horario de verano
 IG_ACCOUNT = "17841405733522791"
+FB_PAGE = "1711394962462292"
 MESES = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
          "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 CONV = "actions_onsite_conversion_messaging_conversation_started_7d"
@@ -307,6 +308,100 @@ def ig_insights(cur, prev):
     return {"summary": summary, "wins": wins[:3], "watch": watch[:3], "next": nxt[:3]}
 
 
+# ---------------------------------------------------------------- Orgánico (Facebook)
+
+def fbo(fields, **kw):
+    return fetch(fields, connector="facebook_organic", account=FB_PAGE, **kw)
+
+
+def build_fb_month(y, m, until):
+    start = dt.date(y, m, 1)
+    last = dt.date(y, m, calendar.monthrange(y, m)[1])
+    end = min(last, until)
+    df, dt_ = start.isoformat(), end.isoformat()
+    partial = end < last
+    daily = []
+    for r in fbo(["date", "page_follows", "page_daily_follows_unique", "page_daily_unfollows_unique",
+                  "page_impressions_unique", "page_post_engagements", "page_views_total"], date_from=df, date_to=dt_):
+        daily.append({"date": r.get("date"), "followers": int(n(r.get("page_follows"))),
+                      "new_followers": int(n(r.get("page_daily_follows_unique"))),
+                      "unfollows": int(n(r.get("page_daily_unfollows_unique"))),
+                      "reach": int(n(r.get("page_impressions_unique"))),
+                      "engagements": int(n(r.get("page_post_engagements"))),
+                      "page_views": int(n(r.get("page_views_total")))})
+    daily.sort(key=lambda x: x["date"])
+    posts = []
+    for r in fbo(["post_id", "post_created_time", "post_message_oneline", "permalink_url", "full_picture",
+                  "post_impressions_unique", "post_engagements", "post_reactions_total", "post_comments_total",
+                  "post_clicks"], date_from=df, date_to=dt_):
+        ts = (r.get("post_created_time") or "")[:10]
+        if not ts.startswith(f"{y}-{m:02d}"):
+            continue
+        reach = int(n(r.get("post_impressions_unique")))
+        eng = int(n(r.get("post_engagements")))
+        posts.append({"date": ts, "type": "post", "caption": short(r.get("post_message_oneline"), 110),
+                      "permalink": r.get("permalink_url"), "image": r.get("full_picture"), "reach": reach,
+                      "engagement": eng, "reactions": int(n(r.get("post_reactions_total"))),
+                      "comments": int(n(r.get("post_comments_total"))), "clicks": int(n(r.get("post_clicks"))),
+                      "eng_rate": eng / reach if reach else 0})
+    posts.sort(key=lambda p: -p["reach"])
+    reach_days = [x["reach"] for x in daily]
+    pr = sum(p["reach"] for p in posts)
+    fol = [x["followers"] for x in daily if x["followers"]]
+    totals = {
+        "followers": fol[-1] if fol else None, "followers_start": fol[0] if fol else None,
+        "new_followers": sum(x["new_followers"] for x in daily), "unfollows": sum(x["unfollows"] for x in daily),
+        "reach_avg": round(sum(reach_days) / len(reach_days)) if reach_days else 0,
+        "reach_peak": max(reach_days) if reach_days else 0,
+        "engagements": sum(x["engagements"] for x in daily), "page_views": sum(x["page_views"] for x in daily),
+        "posts": len(posts), "post_clicks": sum(p["clicks"] for p in posts),
+        "post_reach_avg": round(pr / len(posts)) if posts else 0,
+        "post_eng_rate": (sum(p["engagement"] for p in posts) / pr) if pr else None,
+    }
+    return {"label": f"{MESES[m-1]} {y}", "partial": partial, "through": dt_ if partial else None,
+            "days": len(daily), "totals": totals, "daily": daily, "posts": posts}
+
+
+def fb_insights(cur, prev):
+    t = cur["totals"]
+    wins, watch, nxt = [], [], []
+    en_curso = f" (en curso, datos al {int(cur['through'][8:])})" if cur["partial"] else ""
+    net = t["new_followers"] - t["unfollows"]
+    summary = (f"{cur['label']}{en_curso}: la página ganó {net:+,} seguidores netos ({t['new_followers']} nuevos, "
+               f"{t['unfollows']} dejaron de seguir), con {t['posts']} publicaciones y un alcance promedio de "
+               f"{t['reach_avg']:,} personas al día.")
+    if prev:
+        p = prev["totals"]
+        rn = t["new_followers"] / max(cur["days"], 1)
+        rp = p["new_followers"] / max(prev["days"], 1)
+        if rp and (rn - rp) / rp >= 0.15:
+            wins.append(f"Los seguidores nuevos por día subieron de {rp:.1f} a {rn:.1f}.")
+        elif rp and (rn - rp) / rp <= -0.15:
+            watch.append(f"Los seguidores nuevos por día bajaron de {rp:.1f} a {rn:.1f}.")
+        if p["post_reach_avg"]:
+            ch = (t["post_reach_avg"] - p["post_reach_avg"]) / p["post_reach_avg"]
+            if ch >= 0.10:
+                wins.append(f"Cada publicación alcanzó en promedio {t['post_reach_avg']:,} personas ({ch*100:.0f}% más que el mes anterior).")
+            elif ch <= -0.10:
+                watch.append(f"El alcance promedio por publicación bajó {abs(ch)*100:.0f}%: de {p['post_reach_avg']:,} a {t['post_reach_avg']:,} personas.")
+    if cur["posts"]:
+        best = max(cur["posts"], key=lambda x: (x["engagement"] + x["clicks"], x["reach"]))
+        wins.append(f"La publicación que más movió: “{short(best['caption'], 60)}” ({best['reach']:,} de alcance, {best['clicks']} clics).")
+    if t["post_eng_rate"] is not None and t["post_eng_rate"] < 0.01:
+        watch.append(f"Las publicaciones tienen poca interacción ({t['post_eng_rate']*100:.1f}% del alcance). La interacción de la página viene sobre todo de los anuncios.")
+        nxt.append("Probar publicaciones con pregunta directa, encuestas o videos cortos para generar comentarios.")
+    peak = max(cur["daily"], key=lambda x: x["reach"]) if cur["daily"] else None
+    if peak and t["reach_avg"] and peak["reach"] >= 2 * t["reach_avg"]:
+        watch.append(f"El pico de alcance fue el {int(peak['date'][8:])} ({peak['reach']:,} personas); el alcance de la página incluye lo que traen los anuncios.")
+    recs = [x for x in cur["posts"] if "recuerdo" in (x["caption"] or "").lower() or "invitados" in (x["caption"] or "").lower()]
+    if recs and max(recs, key=lambda x: x["clicks"])["clicks"] >= 10:
+        r = max(recs, key=lambda x: x["clicks"])
+        nxt.append(f"Repetir contenido de recuerdos para eventos: “{short(r['caption'], 45)}” generó {r['clicks']} clics.")
+    if t["posts"] and cur["days"] and t["posts"] / cur["days"] * 7 < 3:
+        nxt.append(f"Publicar más seguido: van {t['posts']} publicaciones en {cur['days']} días.")
+    return {"summary": summary, "wins": wins[:3], "watch": watch[:3], "next": nxt[:3]}
+
+
 def update_organic(data, keys, now, until):
     org = data.get("organic") or {}
     igd = org.get("instagram") or {}
@@ -340,7 +435,24 @@ def update_organic(data, keys, now, until):
             e = old[k]
         months[k] = e
         prev = e
-    data["organic"] = {"instagram": igd, "months": months}
+    fb_months, prev = {}, None
+    old_fb = org.get("fb_months", {})
+    fbd = org.get("facebook") or {}
+    for y, m in keys:
+        k = f"{y}-{m:02d}"
+        try:
+            e = build_fb_month(y, m, until)
+            e["insights"] = fb_insights(e, prev)
+        except Exception as ex:
+            print(f"Facebook {k}: {ex}", file=sys.stderr)
+            if k not in old_fb:
+                continue
+            e = old_fb[k]
+        fb_months[k] = e
+        prev = e
+        if e["totals"].get("followers"):
+            fbd["followers"], fbd["as_of"] = e["totals"]["followers"], e["daily"][-1]["date"] if e["daily"] else None
+    data["organic"] = {"instagram": igd, "months": months, "facebook": fbd, "fb_months": fb_months}
 
 
 def main():

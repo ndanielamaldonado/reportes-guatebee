@@ -88,6 +88,7 @@ a.creative:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .view{display:flex;gap:4px;border-bottom:1px solid var(--line)}
 .view button{font:600 15px var(--body);padding:10px 16px;border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);cursor:pointer;margin-bottom:-1px}
 .view button[aria-pressed="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.net button{font-size:13px;padding:7px 14px}
 .view button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .follow{display:grid;gap:6px;align-content:start}
 .follow .big{font:700 44px/1 var(--display);font-variant-numeric:tabular-nums}
@@ -159,6 +160,10 @@ footer{color:var(--muted);font-size:12px}
   </div>
 
   <div class="stack" id="orgView" hidden>
+  <div class="tabs net" id="onet" role="group" aria-label="Red social">
+    <button data-n="ig" aria-pressed="true">Instagram</button>
+    <button data-n="fb" aria-pressed="false">Facebook</button>
+  </div>
   <section class="kpis" id="okpis" aria-label="Resumen orgánico del mes"></section>
 
   <section class="card" id="oreadcard">
@@ -169,13 +174,8 @@ footer{color:var(--muted);font-size:12px}
   <section class="grid2">
     <div class="card">
       <div class="row">
-        <h2>Instagram día a día</h2>
-        <div class="tabs" id="otabs" role="group" aria-label="Métrica diaria orgánica">
-          <button data-m="reach" aria-pressed="true">Alcance</button>
-          <button data-m="views" aria-pressed="false">Visualizaciones</button>
-          <button data-m="interactions" aria-pressed="false">Interacciones</button>
-          <button data-m="new_followers" aria-pressed="false">Seguidores nuevos</button>
-        </div>
+        <h2 id="odtitle">Instagram día a día</h2>
+        <div class="tabs" id="otabs" role="group" aria-label="Métrica diaria orgánica"></div>
       </div>
       <div class="chart" id="odaily"></div>
     </div>
@@ -184,13 +184,12 @@ footer{color:var(--muted);font-size:12px}
       <div class="big" id="ofollowers">—</div>
       <div class="handle" id="ohandle"></div>
       <p class="sub" id="ofnote"></p>
-      <p class="sub">Facebook orgánico se agrega cuando la página esté conectada en Windsor.ai.</p>
     </div>
   </section>
 
   <section class="card">
     <h2>Publicaciones del mes</h2>
-    <p class="sub">Ordenadas por alcance. La tasa de interacción es interacciones ÷ alcance de cada publicación.</p>
+    <p class="sub" id="opsub">Ordenadas por alcance. La tasa de interacción es interacciones ÷ alcance de cada publicación.</p>
     <div class="ads" id="oposts"></div>
   </section>
   </div>
@@ -311,9 +310,51 @@ function renderTables(m){
 const ICONS={video:'<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="var(--surface)"/><path d="M19 15l15 9-15 9z" fill="var(--fg)"/></svg>',
     imagen:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="40" height="32" rx="4" fill="var(--surface)"/><circle cx="16" cy="19" r="4" fill="var(--accent)"/><path d="M8 36l11-11 7 7 6-5 8 9z" fill="var(--fg)"/></svg>',
     otros:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="8" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="4" y="26" width="18" height="14" rx="3" fill="var(--surface)"/><rect x="26" y="26" width="18" height="14" rx="3" fill="var(--surface)"/></svg>'};
-let view='paid',ometric='reach';
+let view='paid',ometric='reach',net='ig';
+const OTABS={ig:[['reach','Alcance'],['views','Visualizaciones'],['interactions','Interacciones'],['new_followers','Seguidores nuevos']],
+  fb:[['reach','Alcance'],['engagements','Interacciones'],['new_followers','Seguidores nuevos'],['page_views','Visitas a la página']]};
+function buildOtabs(){if(!OTABS[net].some(x=>x[0]===ometric))ometric='reach';
+  $('#otabs').innerHTML=OTABS[net].map(([k,l])=>`<button data-m="${k}" aria-pressed="${k===ometric}">${l}</button>`).join('');}
+function readBlocks(I){const blk=(tt,arr,c)=>arr&&arr.length?`<div style="--c:${c}"><h3>${tt}</h3><ul>${arr.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:'';
+  return blk('Lo que funcionó',I.wins,'var(--good)')+blk('A vigilar',I.watch,'var(--bad)')+blk('Siguientes pasos',I.next,'var(--accent)');}
+function postCard(r,netw){
+  const img=r.image?`<img src="${r.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:'';
+  const f=r.type==='reel'?'video':'imagen';const lbl={reel:'Reel',carrusel:'Carrusel',imagen:'Imagen',post:'Publicación'}[r.type]||'Post';
+  const glyph=`<span class="play${f==='video'?'':' pic'}" style="position:relative">${ICONS[f]}</span>`;const d=new Date(r.date+'T12:00');
+  const where=netw==='fb'?'Facebook':'Instagram';
+  const dl=netw==='fb'?`<dt>Alcance</dt><dd>${num(r.reach)}</dd><dt>Reacciones</dt><dd>${num(r.reactions)}</dd><dt>Comentarios</dt><dd>${num(r.comments)}</dd><dt>Clics</dt><dd>${num(r.clicks)}</dd><dt>Tasa de interacción</dt><dd>${pct(r.eng_rate)}</dd>`
+    :`<dt>Alcance</dt><dd>${num(r.reach)}</dd><dt>Visualizaciones</dt><dd>${num(r.views)}</dd><dt>Me gusta</dt><dd>${num(r.likes)}</dd><dt>Guardados</dt><dd>${num(r.saves)}</dd><dt>Compartidos</dt><dd>${num(r.shares)}</dd><dt>Tasa de interacción</dt><dd>${pct(r.eng_rate)}</dd>`;
+  const tile=r.permalink?`<a class="creative" href="${r.permalink}" target="_blank" rel="noopener" aria-label="Ver publicación en ${where}">${img}<span class="fmt">${lbl}</span>${glyph}<span class="open">Ver en ${where} ↗</span></a>`:`<div class="creative">${img}<span class="fmt">${lbl}</span>${glyph}</div>`;
+  return `<article class="ad">${tile}<div class="body"><div class="date">${d.getDate()} ${MES[d.getMonth()]}</div><div class="cap">${r.caption||''}</div><dl>${dl}</dl></div></article>`;}
+function renderFb(key){
+  const O=DATA.organic||{};const ks=Object.keys(DATA.months).sort(),i=ks.indexOf(key);
+  const M=O.fb_months||{};const m=M[key],p=i>0?M[ks[i-1]]:null;
+  $('#odtitle').textContent='Facebook día a día';
+  $('#opsub').textContent='Ordenadas por alcance. La tasa de interacción es interacciones ÷ alcance de cada publicación.';
+  if(!m){$('#okpis').innerHTML='<div class="kpi"><span class="lbl">Sin datos de Facebook para este mes</span></div>';$('#oreadcard').hidden=true;$('#odaily').innerHTML='';$('#oposts').innerHTML='';$('#ofollowers').textContent='—';return}
+  const t=m.totals,pt=p?p.totals:null,FB=O.facebook||{};const rate=(x,mm)=>mm?x/Math.max(mm.days,1):null;
+  const netf=t.new_followers-t.unfollows;
+  const items=[
+    ['Seguidores de la página',num(t.followers),`<span class="delta ${netf>=0?'up':'down'}">${netf>=0?'▲':'▼'} ${Math.abs(netf)} netos en el mes</span>`,true],
+    ['Seguidores nuevos',num(t.new_followers),pt?delta(rate(t.new_followers,m),rate(pt.new_followers,p)):`<span class="delta flat">${t.unfollows} dejaron de seguir</span>`,true],
+    ['Alcance promedio diario',num(t.reach_avg),delta(t.reach_avg,pt&&pt.reach_avg)],
+    ['Alcance promedio por publicación',num(t.post_reach_avg),delta(t.post_reach_avg,pt&&pt.post_reach_avg)],
+    ['Interacciones con la página',num(t.engagements),delta(rate(t.engagements,m),pt&&rate(pt.engagements,p))],
+    ['Visitas a la página',num(t.page_views),delta(rate(t.page_views,m),pt&&rate(pt.page_views,p))],
+    ['Tasa de interacción',t.post_eng_rate==null?'—':pct(t.post_eng_rate),pt&&pt.post_eng_rate?delta(t.post_eng_rate,pt.post_eng_rate):'<span class="delta flat">por publicación</span>'],
+    ['Publicaciones',num(t.posts),`<span class="delta flat">${num(t.post_clicks)} clics en publicaciones</span>`],
+  ];
+  $('#okpis').innerHTML=items.map(([l,v,d,h])=>`<div class="kpi${h?' hero':''}"><span class="lbl">${l}</span><span class="val">${v}</span>${d}</div>`).join('');
+  const I=m.insights;$('#oreadcard').hidden=!I;if(I){$('#osummary').textContent=I.summary;$('#oread').innerHTML=readBlocks(I);}
+  $('#ofollowers').textContent=num(t.followers);$('#ohandle').textContent='Página de Facebook';
+  $('#ofnote').textContent=`Empezó el mes con ${num(t.followers_start)}. El alcance y las interacciones de la página incluyen lo que generan los anuncios; las publicaciones muestran solo lo orgánico.`;
+  renderODaily(key);
+  $('#oposts').innerHTML=m.posts.length?m.posts.map(r=>postCard(r,'fb')).join(''):'<div class="empty">Sin publicaciones este mes</div>';
+}
 function odelta(a,b,lowerBetter){return delta(a,b,lowerBetter)}
 function renderOrg(key){
+  buildOtabs(); if(net==='fb'){renderFb(key);return}
+  $('#odtitle').textContent='Instagram día a día';
   const O=DATA.organic; const ks=Object.keys(DATA.months).sort(),i=ks.indexOf(key);
   const m=O&&O.months?O.months[key]:null, p=O&&O.months&&i>0?O.months[ks[i-1]]:null;
   if(!m){$('#okpis').innerHTML='<div class="kpi"><span class="lbl">Sin datos orgánicos para este mes</span></div>';$('#oreadcard').hidden=true;$('#odaily').innerHTML='';$('#oposts').innerHTML='';return}
@@ -335,35 +376,26 @@ function renderOrg(key){
   const I=m.insights; $('#oreadcard').hidden=!I;
   if(I){$('#osummary').textContent=I.summary;
     const blk=(tt,arr,c)=>arr&&arr.length?`<div style="--c:${c}"><h3>${tt}</h3><ul>${arr.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:'';
-    $('#oread').innerHTML=blk('Lo que funcionó',I.wins,'var(--good)')+blk('A vigilar',I.watch,'var(--bad)')+blk('Siguientes pasos',I.next,'var(--accent)');}
+    $('#oread').innerHTML=readBlocks(I);}
   $('#ofollowers').textContent=num(IG.followers);
   $('#ohandle').textContent=IG.username?'@'+IG.username+' · Instagram':'Instagram';
   $('#ofnote').textContent=IG.media_count?`${num(IG.media_count)} publicaciones en total. Instagram solo da seguidores nuevos de los últimos 30 días; el historial se va guardando desde ahora.`:'';
   renderODaily(key);
-  $('#oposts').innerHTML=m.posts.length?m.posts.map(r=>{
-    const lbl={reel:'Reel',carrusel:'Carrusel',imagen:'Imagen'}[r.type]||'Post';
-    const img=r.image?`<img src="${r.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:'';
-    const f=r.type==='reel'?'video':'imagen';
-    const glyph=`<span class="play${f==='video'?'':' pic'}" style="position:relative">${ICONS[f]}</span>`;
-    const d=new Date(r.date+'T12:00');
-    return `<article class="ad"><a class="creative" href="${r.permalink}" target="_blank" rel="noopener" aria-label="Ver publicación en Instagram">${img}<span class="fmt">${lbl}</span>${glyph}<span class="open">Ver en Instagram ↗</span></a>
-      <div class="body"><div class="date">${d.getDate()} ${MES[d.getMonth()]}</div><div class="cap">${r.caption||''}</div>
-      <dl><dt>Alcance</dt><dd>${num(r.reach)}</dd><dt>Visualizaciones</dt><dd>${num(r.views)}</dd><dt>Me gusta</dt><dd>${num(r.likes)}</dd>
-      <dt>Guardados</dt><dd>${num(r.saves)}</dd><dt>Compartidos</dt><dd>${num(r.shares)}</dd><dt>Tasa de interacción</dt><dd>${pct(r.eng_rate)}</dd></dl></div></article>`}).join('')
+  $('#oposts').innerHTML=m.posts.length?m.posts.map(r=>postCard(r,'ig')).join('')
     :'<div class="empty">Sin publicaciones este mes</div>';
 }
 function renderODaily(key){
-  const m=DATA.organic&&DATA.organic.months[key]; if(!m)return;
+  const O=DATA.organic||{};const m=(net==='fb'?(O.fb_months||{}):(O.months||{}))[key]; if(!m)return;
   const [yy,mm]=key.split('-').map(Number);const by=Object.fromEntries(m.daily.map(d=>[d.date,d]));const days=new Date(yy,mm,0).getDate();const pts=[];
   for(let d=1;d<=days;d++){const ds=`${key}-${String(d).padStart(2,'0')}`;if(m.partial&&m.through&&ds>m.through)break;const r=by[ds];
     const v=r?r[ometric]:null;
-    pts.push({v:v||0,name:`${d} ${MES[mm-1]}`,tick:(d===1||d%5===0)?d:'',hi:true,extra:r?(ometric==='new_followers'&&v==null?'Sin dato (Instagram solo guarda 30 días)':`${num(r.reach)} alcance · ${num(r.views)} visualizaciones · ${num(r.interactions)} interacciones`):'Sin dato'});}
-  bars($('#odaily'),pts,v=>num(v),{label:'Serie diaria de Instagram'});
+    pts.push({v:v||0,name:`${d} ${MES[mm-1]}`,tick:(d===1||d%5===0)?d:'',hi:true,extra:r?(ometric==='new_followers'&&v==null?'Sin dato (Instagram solo guarda 30 días)':net==='fb'?`${num(r.reach)} alcance · ${num(r.new_followers)} seguidores nuevos · ${num(r.page_views)} visitas`:`${num(r.reach)} alcance · ${num(r.views)} visualizaciones · ${num(r.interactions)} interacciones`):'Sin dato'});}
+  bars($('#odaily'),pts,v=>num(v),{label:'Serie diaria orgánica'});
 }
 function setView(v){
   view=v;document.querySelectorAll('#view button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
   $('#paidView').hidden=v!=='paid';$('#orgView').hidden=v!=='org';
-  $('#eyebrow').textContent=v==='paid'?'Meta Ads · Facebook e Instagram':'Orgánico · Instagram';
+  $('#eyebrow').textContent=v==='paid'?'Meta Ads · Facebook e Instagram':'Orgánico · Instagram y Facebook';
   try{localStorage.setItem('gb-view',v)}catch(e){}
   if(cur){show(cur)}
 }
@@ -372,7 +404,7 @@ function show(key){
   document.querySelectorAll('#months button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===key));
   $('#mlabel').textContent=m.label;
   const th=m.through?new Date(m.through+'T12:00'):null;
-  $('#meta').innerHTML=(m.partial?`<span class="pill">Parcial · datos al ${th.getDate()} ${MES[th.getMonth()]}</span> `:'')+`Comparado con ${p?p.label.toLowerCase():'—'} · `+(view==='org'?'Instagram @'+((DATA.organic&&DATA.organic.instagram&&DATA.organic.instagram.username)||'guatebee'):`cifras en ${DATA.account.currency}`);
+  $('#meta').innerHTML=(m.partial?`<span class="pill">Parcial · datos al ${th.getDate()} ${MES[th.getMonth()]}</span> `:'')+`Comparado con ${p?p.label.toLowerCase():'—'} · `+(view==='org'?(net==='fb'?'Página de Facebook':'Instagram @'+((DATA.organic&&DATA.organic.instagram&&DATA.organic.instagram.username)||'guatebee')):`cifras en ${DATA.account.currency}`);
   renderKpis(m,p);renderRead(m);renderDaily(key);renderCpc(key);renderTables(m);renderOrg(key);
   try{localStorage.setItem('gb-month',key)}catch(e){}
 }
@@ -383,10 +415,13 @@ function init(d){
   $('#dtabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;metric=b.dataset.m;
     document.querySelectorAll('#dtabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderDaily(cur)});
   $('#view').addEventListener('click',e=>{const b=e.target.closest('button');if(b)setView(b.dataset.v)});
+  $('#onet').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;net=b.dataset.n;
+    document.querySelectorAll('#onet button').forEach(x=>x.setAttribute('aria-pressed',x===b));try{localStorage.setItem('gb-net',net)}catch(e){}show(cur)});
+  try{const sn=localStorage.getItem('gb-net');if(sn==='fb'||sn==='ig'){net=sn;document.querySelectorAll('#onet button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.n===net))}}catch(e){}
   $('#otabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ometric=b.dataset.m;
     document.querySelectorAll('#otabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderODaily(cur)});
   const up=new Date(d.updated+'T12:00');
-  $('#foot').textContent=`Fuente: Meta Ads e Instagram vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}. Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
+  $('#foot').textContent=`Fuente: Meta Ads, Instagram y Facebook vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}. Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
   let saved=null;try{saved=localStorage.getItem('gb-month')}catch(e){}
   show(ks.includes(saved)?saved:ks[ks.length-1]);
   let sv=location.hash==='#organico'?'org':null;if(!sv){try{sv=localStorage.getItem('gb-view')}catch(e){}}
