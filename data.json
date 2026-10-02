@@ -4,7 +4,7 @@
   "currency": "USD",
   "platform": "Meta Ads"
  },
- "updated": "2026-10-01",
+ "updated": "2026-10-02",
  "source": "Windsor.ai",
  "months": {
   "2026-08": {
@@ -60,7 +60,7 @@
      "conversations": 240,
      "format": "video",
      "permalink": "https://www.instagram.com/p/DcUYUsYgukU/",
-     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/672045242_1273263984874584_1691435211653531260_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=gZgWTGhtFBgQ7kNvwFpLlKk&_nc_oc=Adrd9Reoxe1KFbV81bUBlywKyfuF5cQa9aLer8q-_PEdBv_2CiBAuoqyVu_6H6Rn3lk&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=aAVBjzqjAK9WD6OLhhi_wQ&_nc_tpa=Q5bMBQKNstwFQ9RDtFbXDRYtEObc8JjThmgTyt2KnU-GpQUpIw0lrPWWV7KLU28Gjmw5m9qZcYy0fPHPaw&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQN7zptKpb10VHEJIEpRJAjM8aQYBpvcEo7x9shhzn9wbg&oe=6AC22374"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/672045242_1273263984874584_1691435211653531260_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=oo0n1qIlSw0Q7kNvwFYTZIM&_nc_oc=Ado1tcIzEG7uIczwXo64gmvXRcB93iogP8SAO3WCNTwSgj3QPwp47wHM5mKRMRN66-M&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=Ois9n8B7Hx3ppGARht4Tpw&_nc_tpa=Q5bMBQJt_bwi26mU97SU1B8ImXUFXbg6fhPUnI-RlCf0mfIN3t2PBgYn-yeuD0RjgNbekuUJx7Hez-lEdw&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQOzoD5T6r9w-HR4tUTmn83EVAkny7w_lPHqBDq8iGEsvw&oe=6AC56F34"
     },
     {
      "name": "recuerdos agosto 2026",
@@ -72,7 +72,7 @@
      "conversations": 121,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/Db_OpUHA5sV/",
-     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/652485285_4304856823105356_8118220679826618551_n.png?_nc_cat=101&ccb=1-7&_nc_ohc=mdkWfAsKUZwQ7kNvwH1H1AQ&_nc_oc=AdoPy2lh5UyuInEMRSkE8-XgeVZ60M9KRWBpUSx0b7xor2ouBkk43JtgZn8879SF020&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=4g1lQ0ncLMthJDtWU-c9yg&_nc_tpa=Q5bMBQLPS_OlievGPy9EgYSda_zjCDlgX6KbLKeP5FL5L8Uf8iGUs1maVkVUvrLiblIAHfo1VEG8V_Xe7w&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AQMWxk4RYO32W-caXqsfgJACnnpwHSSP4SkLfqW0oq_HCg&oe=6AC2361C"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/652485285_4304856823105356_8118220679826618551_n.png?_nc_cat=101&ccb=1-7&_nc_ohc=aTbs5i_76AsQ7kNvwHUJXoo&_nc_oc=Adq8rGewDdWCDD7nLzso3UsV5Jjs-mUA8uEGQpLbbWsN0oix8Gh9-MrbcWJ979oaOtU&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=dy1TRaX4egqiXj1DkCrSGw&_nc_tpa=Q5bMBQJPMq1U_ziBMW0bK_jLHiYF4zYAF9hLNpEuehEGkEn4ezHOPQIPFbS9iC9ZgUUEQrBhB_15rfYFvg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=52f3c4&_nc_sid=58080a&oh=00_AQO2T2GY1rl31mgpit27f_-qTuT1DbCH900Ls2Rnd44_NQ&oe=6AC581DC"
     },
     {
      "name": "Agosto 2026",
@@ -339,25 +339,25 @@
    "partial": false,
    "through": null,
    "totals": {
-    "spend": 175.12,
-    "impressions": 109359,
+    "spend": 175.13,
+    "impressions": 109372,
     "reach": 38129,
     "clicks": 3970,
     "link_clicks": 1626,
     "ctr": 0.0363,
     "cpc": 0.0441,
-    "cpm": 1.6013,
-    "frequency": 2.8681,
+    "cpm": 1.6012,
+    "frequency": 2.8685,
     "leads": 13,
     "conversations": 571,
-    "engagement": 6711
+    "engagement": 6712
    },
    "campaigns": [
     {
      "name": "Septiembre 2026",
      "objective": "OUTCOME_ENGAGEMENT",
      "spend": 99.2,
-     "impressions": 57590,
+     "impressions": 57592,
      "reach": 20524,
      "clicks": 1921,
      "ctr": 0.0334,
@@ -368,7 +368,7 @@
      "name": "Septiembre 2026 2",
      "objective": "OUTCOME_ENGAGEMENT",
      "spend": 48.58,
-     "impressions": 35669,
+     "impressions": 35672,
      "reach": 16290,
      "clicks": 1558,
      "ctr": 0.0437,
@@ -389,13 +389,13 @@
     {
      "name": "Amplio G | WA",
      "objective": "OUTCOME_SALES",
-     "spend": 10.73,
-     "impressions": 5024,
-     "reach": 3704,
+     "spend": 10.74,
+     "impressions": 5032,
+     "reach": 3711,
      "clicks": 255,
-     "ctr": 0.0508,
+     "ctr": 0.0507,
      "conversations": 19,
-     "engagement": 2097
+     "engagement": 2098
     }
    ],
    "ads": [
@@ -403,25 +403,25 @@
      "name": "Anuncio general recuerdos septiembre",
      "campaign": "Septiembre 2026",
      "spend": 59.4,
-     "impressions": 37147,
+     "impressions": 37149,
      "clicks": 1089,
      "ctr": 0.0293,
      "conversations": 206,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/Dcu6Bt9g5We/",
-     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/782906784_4475294132728290_7661499903962196972_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=D6BHILm6-OYQ7kNvwEQuntr&_nc_oc=AdomH2X0UvEiLJ7ke74AYA3tG6zf-BtwUHu3AMBxzlYsSSR831f3OhCD_Rgeko_l6sA&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=gI1adfmDssUU6RWsuAJwgw&_nc_tpa=Q5bMBQKZ6x0yLX-NFeC8f_t2Xi40zm9eG6XMXzoh38GPcqedeki65TZK-OljTAie_GB7HJgN95GazdP-ug&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQO1Gm_-vTcKhmgE5akeOsQaKoR5FAaEyh_YmPPswjp8nQ&oe=6AC4267E"
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/782906784_4475294132728290_7661499903962196972_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=D6BHILm6-OYQ7kNvwEQuntr&_nc_oc=AdomH2X0UvEiLJ7ke74AYA3tG6zf-BtwUHu3AMBxzlYsSSR831f3OhCD_Rgeko_l6sA&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=CTucn8FkT3BB1DM7B7e2yw&_nc_tpa=Q5bMBQI3H-PQtrkezjxaePvuXnOWSvdgyQ1kJBLxi4Lqaxm78IMM4o5GLXDS8chlzRitZJT7-J1GdVpl2g&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQN8KQ-bwC9kxQFyzKZIb-ZJUFHdqjkaGfrbTqnNBoT9vw&oe=6AC577FE"
     },
     {
      "name": "Septiembre 2026 2",
      "campaign": "Septiembre 2026 2",
      "spend": 48.58,
-     "impressions": 35669,
+     "impressions": 35672,
      "clicks": 1558,
      "ctr": 0.0437,
      "conversations": 200,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/Dcu0Dr_gIWR/",
-     "thumbnail": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/782616408_4475261012731602_3261967354194480485_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=ZSWzmYsNJn0Q7kNvwGA1bSI&_nc_oc=AdoCXNB_Oa8u06KQyjvKVxKk4AtJl71K0zzZxw8v6P9JeDolayCQ45SmZsWPMf_Kvcc&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=EDNgxT2yQtvUekoy8Ba8vw&_nc_tpa=Q5bMBQIER9hrAN9cVl0jUGxbxlaTE3T3w60hmBVWlTQVEsEQo7O6TGH7BSvNbyq1KVqNmyxuJjxE0R2Piw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQP_WReY4ILRpDthceZ3GFtd_wvdlcSxWccURg2oPWXs1Q&oe=6AC41A8F"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782616408_4475261012731602_3261967354194480485_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=ZSWzmYsNJn0Q7kNvwGA1bSI&_nc_oc=AdoCXNB_Oa8u06KQyjvKVxKk4AtJl71K0zzZxw8v6P9JeDolayCQ45SmZsWPMf_Kvcc&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=nhtgirLwVQkNUPbFX7-8Ag&_nc_tpa=Q5bMBQK1TwRZJPQh7NnpPR6KeRzUD0fsxJksdBYYfUXC_s8cQg11tW3al5b_QnU64OmCu4M3cjAae3xcFA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQOS2LaJFKbnXWbikgqxyEBnmDxIEUml34My0BNW6G9xRA&oe=6AC56C0F"
     },
     {
      "name": "Bodas 2026",
@@ -433,19 +433,19 @@
      "conversations": 111,
      "format": "video",
      "permalink": "https://www.instagram.com/p/Dcu414zAGNJ/",
-     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/790879890_2077122333167746_6859682140345575250_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=E6hzGTocKEIQ7kNvwH6YkOb&_nc_oc=Ado64Gvnm0cHjaVFzOQE10IRw3pNG8hgKLihiFpvZ4TucpBQtodjpzcSFO4CGefd3QY&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=peDsNvWOytIq28ZBi6k-0g&_nc_tpa=Q5bMBQIVG6akAyGgRYUwgKjYsvRVNASGOI2VSx7qmv3UHS8IHjQ5I6QyEU2tGUXiBTWc-pCI3WiJfXrXOQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQO3VRIGS7MaxLH82fuJZKZA5J7sxmdQi1MHy2CbkTpKMg&oe=6AC4452B"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.5256-10/790879890_2077122333167746_6859682140345575250_n.jpg?_nc_cat=106&ccb=1-7&_nc_ohc=E6hzGTocKEIQ7kNvwH6YkOb&_nc_oc=Ado64Gvnm0cHjaVFzOQE10IRw3pNG8hgKLihiFpvZ4TucpBQtodjpzcSFO4CGefd3QY&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=iKvH7nfumgBQtgfVgweEiA&_nc_tpa=Q5bMBQK0UvYWs77oi6QB95MLCFq0ahxarFCBZvbqqFGKS_KNuopN0QFaRZYSSwpJfegBf0lyG3iGCYaZwA&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQOhQLpjpvGRsiiTnu0aezWGqELdtGeYa9T_ZNvSCNAlDQ&oe=6AC596AB"
     },
     {
      "name": "Video 1 segundo hook",
      "campaign": "Amplio G | WA",
-     "spend": 9.38,
-     "impressions": 4575,
+     "spend": 9.39,
+     "impressions": 4583,
      "clicks": 239,
      "ctr": 0.0522,
      "conversations": 14,
      "format": "video",
      "permalink": "https://www.instagram.com/p/Dd4mYAUAHYf/",
-     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/828873210_868416269598525_3407431877175530066_n.jpg?_nc_cat=107&ccb=1-7&_nc_ohc=DWgE1DWcN8YQ7kNvwHlF59d&_nc_oc=AdphsTgEa5bXsW5oAVygrFTh4Vayapl5sm6iwIV0LVMBCkeKQIruA0NOAX_eXY3qvt4&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=gf7-CMBvevII0pzJ7WqUMw&_nc_tpa=Q5bMBQLq95wFWc-8Qg9d1L4lR5WXx_gzeGSqhycwt8geTr5AOKrK9UrykN-ao1rtmb9Iwd9WTNaQOsg8sA&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQOqXJ7mPU8275tC-4Xl8ZujYX_9RcXubpXECGcml9EE2g&oe=6AC43E44"
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/828873210_868416269598525_3407431877175530066_n.jpg?_nc_cat=107&ccb=1-7&_nc_ohc=filLS4GLgv8Q7kNvwGTMeSq&_nc_oc=AdpGEe41sKkwQynehAttAt1Z4qNOnM4qy6jzkIFGvfAIZH3mPTw-fQEyXKo2i7NFfLs&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=kzwEshGzR8xI5CCLdR3oLA&_nc_tpa=Q5bMBQLRoxJVgB1mSZ8eDx3-kN9K4F8zahACT_As-2Kh4hR5K4zj6UQQmxBBfF_kQvsZBCAhVjW7iV1JUg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQPu2tRGnL8KnUlIMkojrlPbyUQGTIGhE9H5rE-jJTv9gg&oe=6AC58FC4"
     },
     {
      "name": "Bautizo 2026",
@@ -457,7 +457,7 @@
      "conversations": 28,
      "format": "video",
      "permalink": "https://www.instagram.com/p/Dcu4gkSgQZI/",
-     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/791483315_1050137684479073_2469698523742957530_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=gkTmrIwz6cMQ7kNvwFalFLs&_nc_oc=Ado6ut5zb2MqHI2vqeLJwvi2F2-mDJnG-VVrCwxHoHkxrYxPm1Mh_35rf0aa43gcVwg&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=RyZZRgtZkxkUjTc9Tt_hrg&_nc_tpa=Q5bMBQKbz4D0EEexTRsN2Vbr0CP7t-hssbWlaH_V9ZfrvWFfoxZdyFLWJ6N4Pnm623bNvQVbA20CFDs69Q&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQOXNSU2dI1C5CuB2DOIeuD9DPQhdDQL58WRoA4VQ1fo3Q&oe=6AC41806"
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/791483315_1050137684479073_2469698523742957530_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=gkTmrIwz6cMQ7kNvwFalFLs&_nc_oc=Ado6ut5zb2MqHI2vqeLJwvi2F2-mDJnG-VVrCwxHoHkxrYxPm1Mh_35rf0aa43gcVwg&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=Xme9Q8AT-sn2sA0QxcovVQ&_nc_tpa=Q5bMBQIfRonC_TVeA4fty66RYDTtcDVtoUZviBFUusw8dJY_0pH8vuhq6NIlnRzyZOBnIYqzC2oszaRIMQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQNuYXLfUpJ5VE6GANA7pHUPAejtdm0Vccsqd3GpUArvlw&oe=6AC56986"
     },
     {
      "name": "05 Limón 420 | Precio",
@@ -469,7 +469,7 @@
      "conversations": 1,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/DdJwt_-AS-8/",
-     "thumbnail": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/803050814_4508044406130299_4497764155422877418_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=7X3O4n0TqIcQ7kNvwFD8RDQ&_nc_oc=AdodVe0ChU-EL87cf__F6w9IkRQOg5xxFfm8owQXAq38ldS5c7g87EBbBBGmOUqy8wE&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=hyKS8c7DDgW9NF6TKEpepQ&_nc_tpa=Q5bMBQKss6XN0lYxYwVygwE8_EL0a73eMa8zBoqd6jm8HBmwyMw0Rf688HQ0C0ll4zkXiv8NjirQ52DBvw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQNDiy0bIem89nLgmJHKCu01iLii4lb3iU6YUn4-CMuKvA&oe=6AC439B2"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/803050814_4508044406130299_4497764155422877418_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=7X3O4n0TqIcQ7kNvwFD8RDQ&_nc_oc=AdodVe0ChU-EL87cf__F6w9IkRQOg5xxFfm8owQXAq38ldS5c7g87EBbBBGmOUqy8wE&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=YWggB-Mzt7e3juBYFXZVxQ&_nc_tpa=Q5bMBQJlKo86wwg0SIF9aC99xg9zkxNSLNr2oYA-588NbxpLcQ6DOddMhXwbD9MiUoOlNalBTHOgYWTzPA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQPkqaOr395XFxBVuzM-gIx8UTq5Qvl-NWaPJXM-vk6nkQ&oe=6AC58B32"
     },
     {
      "name": "09 Limón 420 | Limón real",
@@ -481,7 +481,7 @@
      "conversations": 0,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/DdJxrF-As-K/",
-     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/802811462_4508111256123614_5495873283354799675_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=OSkC8cQRDHoQ7kNvwF6NWCr&_nc_oc=Ado1ra4C3Wcj_93rAyK4mbSc37j3XVOhVoHY5X1UMxWChCwX-Y4dwm2dx689T9KFSJA&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=gr6y8R71qFseWG4QN3-jrw&_nc_tpa=Q5bMBQJ6DrpSqgm3EAKOlUd7vXhKIBn62ikRAg9EQVsQPpzcRwZit7BKY10n3gDMmM4p2DYQ_bYLoe7BAA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQPhPiZX7FwWr7bIwgoUDMmrFZy3QTTtzUpbEKv2q3IVrQ&oe=6AC4342F"
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/802811462_4508111256123614_5495873283354799675_n.jpg?_nc_cat=111&ccb=1-7&_nc_ohc=vowaU56WBEMQ7kNvwFUeO3r&_nc_oc=AdpN5TY6wKWzwrffUKxx2HznpwFc06gwDjEjbk4UF2AWW3m2vLyAWxmaldxO171njzs&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=II9boi-omqD-C4vntfTvHw&_nc_tpa=Q5bMBQJI1m6SCLEcs4lYjurszjlVD8nKDIQU47MstTwYVXXpA5-fgebHLBXjRX49vxLQ68lXegQlgLEMwg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQP7_zrx8GT4NT6oFzMgF0XB3wuR01tuESvhc911AkOAdA&oe=6AC585AF"
     },
     {
      "name": "01 Limón 420 | Marca",
@@ -493,7 +493,7 @@
      "conversations": 1,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/DdJv7xegvmO/",
-     "thumbnail": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/802989823_4508111169456956_8339202747498845702_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=Qi-nHzhwEHwQ7kNvwEsUlWJ&_nc_oc=AdqA_GbFp5XHWPXYT2bvJBrCsAEB6awTNDdm1OGZ7qaobvk6QoT7G5YOD70WfzpKfpQ&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=SXeWpKfwHXWga-qQRIA9Hw&_nc_tpa=Q5bMBQIpQbsfr3xoEi3a6T57PcTj9GUIsgOP3G84Zx-WElYsPYjaCP65gL_nMiam1DrEcPu3_VfP3EqwGg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQOIXgQEjHfeT1guntPpp5wXVP_jgJjdK1U7rBCpvkDm-g&oe=6AC436B3"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/802989823_4508111169456956_8339202747498845702_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=Qi-nHzhwEHwQ7kNvwEsUlWJ&_nc_oc=AdqA_GbFp5XHWPXYT2bvJBrCsAEB6awTNDdm1OGZ7qaobvk6QoT7G5YOD70WfzpKfpQ&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=nI7sbC6taOydFazw-XuMIQ&_nc_tpa=Q5bMBQKJrDfefTdG9ib-apQS7mpboGMBI3ajI0cbsmxT5zlJF9KI6Hn3SLkr8ME8Gyfxflp20HuRFP-GDA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQNr4OOReTDiYJWQ8wmq4fTpde0n0WhC2oGmzwG1JZKRHA&oe=6AC58833"
     },
     {
      "name": "01 Líquida 420 | Marca",
@@ -505,7 +505,7 @@
      "conversations": 1,
      "format": "imagen",
      "permalink": "https://www.instagram.com/p/DdJx4KaAQwL/",
-     "thumbnail": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/802900245_4508168536117886_5242002021818040036_n.jpg?_nc_cat=103&ccb=1-7&_nc_ohc=Hem2rAN9tM0Q7kNvwEwE1NG&_nc_oc=AdodhOk8OxxtcOpbbgZCqRHouWT7suxJZUxhVcu_pCRQSE1oxy_TKqg8oyHSCxbuKwU&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=joNvDV54nOyG7RzczlCq9w&_nc_tpa=Q5bMBQJJo4L-4CNfi27Zc9CMR98urw-4iq-bGZUsytRTqDCoRpX4r7vYdVEDunYI4vXm13yNR6DVME5Dxg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQODB97-YcQdeyyDeomobx15qlootEDeUxuO7qpR3fsSmg&oe=6AC41129"
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/802900245_4508168536117886_5242002021818040036_n.jpg?_nc_cat=103&ccb=1-7&_nc_ohc=Hem2rAN9tM0Q7kNvwEwE1NG&_nc_oc=AdodhOk8OxxtcOpbbgZCqRHouWT7suxJZUxhVcu_pCRQSE1oxy_TKqg8oyHSCxbuKwU&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=lZN4wO-wo3-QIclWy8javw&_nc_tpa=Q5bMBQJZWeakfsF22mPjUZCa43zNmuI1BjdEsIPP5Cs1S4qGxltgkzsI7P8O0dIyA1VDhGu543onxr5qTw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQOohmm6nxUNUqdCqQGPhM-zlD6wD6D62F0vRzvKAOVKHg&oe=6AC562A9"
     },
     {
      "name": "Otros 16 anuncios",
@@ -726,14 +726,14 @@
     },
     {
      "date": "2026-09-30",
-     "spend": 8.84,
-     "impressions": 3945,
+     "spend": 8.85,
+     "impressions": 3958,
      "clicks": 188,
      "conversations": 24
     }
    ],
    "insights": {
-    "summary": "Septiembre 2026: 571 conversaciones iniciadas con $175.12 de inversión, a $0.31 por conversación (mejor que agosto: $0.43).",
+    "summary": "Septiembre 2026: 571 conversaciones iniciadas con $175.13 de inversión, a $0.31 por conversación (mejor que agosto: $0.43).",
     "wins": [
      "El costo por conversación bajó 29%: de $0.43 a $0.31.",
      "“Septiembre 2026 2” es la campaña más eficiente: $0.24 por conversación (200 conversaciones).",
@@ -749,17 +749,145 @@
      "Hacer nuevas piezas con el estilo de “Septiembre 2026 2”."
     ]
    }
+  },
+  "2026-10": {
+   "label": "Octubre 2026",
+   "partial": true,
+   "through": "2026-10-01",
+   "totals": {
+    "spend": 9.59,
+    "impressions": 3608,
+    "reach": 2786,
+    "clicks": 129,
+    "link_clicks": 20,
+    "ctr": 0.0358,
+    "cpc": 0.0743,
+    "cpm": 2.658,
+    "frequency": 1.295,
+    "leads": 2,
+    "conversations": 10,
+    "engagement": 956
+   },
+   "campaigns": [
+    {
+     "name": "Septiembre 2026",
+     "objective": "OUTCOME_ENGAGEMENT",
+     "spend": 0.68,
+     "impressions": 469,
+     "reach": 392,
+     "clicks": 12,
+     "ctr": 0.0256,
+     "conversations": 2,
+     "engagement": 5
+    },
+    {
+     "name": "Septiembre 2026 2",
+     "objective": "OUTCOME_ENGAGEMENT",
+     "spend": 0.82,
+     "impressions": 630,
+     "reach": 533,
+     "clicks": 24,
+     "ctr": 0.0381,
+     "conversations": 2,
+     "engagement": 7
+    },
+    {
+     "name": "Amplio G | WA",
+     "objective": "OUTCOME_SALES",
+     "spend": 8.09,
+     "impressions": 2509,
+     "reach": 1940,
+     "clicks": 93,
+     "ctr": 0.0371,
+     "conversations": 6,
+     "engagement": 944
+    }
+   ],
+   "ads": [
+    {
+     "name": "Video 1 segundo hook",
+     "campaign": "Amplio G | WA",
+     "spend": 7.08,
+     "impressions": 2178,
+     "clicks": 73,
+     "ctr": 0.0335,
+     "conversations": 5,
+     "format": "video",
+     "permalink": "https://www.instagram.com/p/Dd4mYAUAHYf/",
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/828873210_868416269598525_3407431877175530066_n.jpg?_nc_cat=107&ccb=1-7&_nc_ohc=filLS4GLgv8Q7kNvwGTMeSq&_nc_oc=AdpGEe41sKkwQynehAttAt1Z4qNOnM4qy6jzkIFGvfAIZH3mPTw-fQEyXKo2i7NFfLs&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=-VlgjETaGadKu5j5TKPc7A&_nc_tpa=Q5bMBQJIubHObJ374xKNp7_-rsiR27rVGcQx9fkKVToxBJzZsqnFcohozLuMegr4wwff6ix8OlMYiL-13Q&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQOT93kcbAH37iR_Pe08N9U1uI0EUA0ClyxrWaHgIenkwQ&oe=6AC58FC4"
+    },
+    {
+     "name": "Video 1",
+     "campaign": "Amplio G | WA",
+     "spend": 1.01,
+     "impressions": 331,
+     "clicks": 20,
+     "ctr": 0.0604,
+     "conversations": 1,
+     "format": "video",
+     "permalink": "https://www.instagram.com/p/Dd4m6zigq08/",
+     "thumbnail": "https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/829189914_1515191000444823_5698235903098808803_n.jpg?_nc_cat=110&ccb=1-7&_nc_ohc=v8VfLV5oRGUQ7kNvwFJGKvG&_nc_oc=AdqJcEHDyDH2S-K6ijB5qzC6RNG4KA5PvRwfW3co6GKzkah-RuQNq_76gvQBSOvksew&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AEuWsiQEAAAA&_nc_gid=-VlgjETaGadKu5j5TKPc7A&_nc_tpa=Q5bMBQLeVDZQAoPn9znZmuaLhK6QzdNRDRDmifKinVy49jotKm7q9HzVZhsSLg1KMt-2_n9XUNio-vVBCg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQMVTvxOAad3l_u8Ub19KoNUMcl0WvXCaf5G1HvNGXmp6g&oe=6AC58429"
+    },
+    {
+     "name": "Septiembre 2026 2",
+     "campaign": "Septiembre 2026 2",
+     "spend": 0.82,
+     "impressions": 630,
+     "clicks": 24,
+     "ctr": 0.0381,
+     "conversations": 2,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/Dcu0Dr_gIWR/",
+     "thumbnail": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782616408_4475261012731602_3261967354194480485_n.jpg?_nc_cat=108&ccb=1-7&_nc_ohc=ZSWzmYsNJn0Q7kNvwGA1bSI&_nc_oc=AdoCXNB_Oa8u06KQyjvKVxKk4AtJl71K0zzZxw8v6P9JeDolayCQ45SmZsWPMf_Kvcc&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=_HSAUAqLL415nWEcqdfKeQ&_nc_tpa=Q5bMBQLyHpFlm439N_mCQPrdmXzTTdBg5w21ikaHeflfYtm3O84UgzIBZbxtu_S03WQ8Xbi51bzCUWqfJw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQOYehwcIv5uWuyKt_6Y9cz8KBDWl3rS0vIdf-VXa033vQ&oe=6AC56C0F"
+    },
+    {
+     "name": "Anuncio general recuerdos septiembre",
+     "campaign": "Septiembre 2026",
+     "spend": 0.68,
+     "impressions": 469,
+     "clicks": 12,
+     "ctr": 0.0256,
+     "conversations": 2,
+     "format": "imagen",
+     "permalink": "https://www.instagram.com/p/Dcu6Bt9g5We/",
+     "thumbnail": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/782906784_4475294132728290_7661499903962196972_n.jpg?_nc_cat=104&ccb=1-7&_nc_ohc=D6BHILm6-OYQ7kNvwEQuntr&_nc_oc=AdomH2X0UvEiLJ7ke74AYA3tG6zf-BtwUHu3AMBxzlYsSSR831f3OhCD_Rgeko_l6sA&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=olnnjpt5W2ES0qoAPa0qfA&_nc_tpa=Q5bMBQJF20c51g3lpm0uyrvKLgwJGelk6FhgkOrzRbnnsPvQt8BpytQWJS3_HHDmHgCKmwmU8DZ61jHkbg&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQOvMvePUoP_CTzP4nVkoK10Wzwohxi-wQ2zuohG2TgFrQ&oe=6AC577FE"
+    }
+   ],
+   "daily": [
+    {
+     "date": "2026-10-01",
+     "spend": 9.59,
+     "impressions": 3608,
+     "clicks": 129,
+     "conversations": 10
+    }
+   ],
+   "insights": {
+    "summary": "Octubre 2026 (en curso, datos al 1): 10 conversaciones iniciadas con $9.59 de inversión, a $0.96 por conversación (peor que septiembre: $0.31).",
+    "wins": [
+     "“Amplio G | WA” es la campaña más eficiente: $1.35 por conversación (6 conversaciones).",
+     "El mejor anuncio es “Video 1 segundo hook”: 5 conversaciones a $1.42 cada una."
+    ],
+    "watch": [
+     "El costo por conversación subió 213%: de $0.31 a $0.96."
+    ],
+    "next": [
+     "Escalar el presupuesto de “Amplio G | WA” mientras mantenga el costo por conversación.",
+     "Hacer nuevas piezas con el estilo de “Video 1 segundo hook”."
+    ]
+   }
   }
  },
  "organic": {
   "instagram": {
    "username": "guatebee",
-   "followers": 9537,
-   "media_count": 947,
+   "followers": 9542,
+   "media_count": 948,
    "follower_history": {
     "2026-09-29": 9529,
     "2026-09-30": 9529,
-    "2026-10-01": 9537
+    "2026-10-01": 9537,
+    "2026-10-02": 9542
    },
    "new_followers": {
     "2026-08-31": 3,
@@ -792,9 +920,10 @@
     "2026-09-27": 4,
     "2026-09-28": 2,
     "2026-09-29": 4,
-    "2026-09-30": 0
+    "2026-09-30": 7,
+    "2026-10-01": 0
    },
-   "as_of": "2026-10-01"
+   "as_of": "2026-10-02"
   },
   "months": {
    "2026-08": {
@@ -815,7 +944,7 @@
      "new_followers": 3,
      "new_followers_days": 1,
      "posts": 6,
-     "post_eng_rate": 0.029056772463120252
+     "post_eng_rate": 0.028888888888888888
     },
     "daily": [
      {
@@ -1042,52 +1171,52 @@
       "type": "imagen",
       "caption": "¡De la colmena directo a tu mesa! 🌾🧀🥖",
       "permalink": "https://www.instagram.com/p/DcEgqQ_jXWS/",
-      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/774468982_1061682903219112_6882373904947293354_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=dOAm6YXwaVIQ7kNvwGtM1J6&_nc_oc=AdpBZ6MGKkTyqFXG-JG4iqwsZXehBVNerHIXPX7oDNyvcc8XEsYq6wQTgGgdb9hdjDo&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=rMk5Dla-xKkhLUeHkiFm7w&oh=00_AQMCS4XkpazKUiZjpIOg9x2PzbWIYd-_uOmDpTGSrj8Rvw&oe=6AC43513",
-      "reach": 553,
-      "views": 998,
+      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/774468982_1061682903219112_6882373904947293354_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=dOAm6YXwaVIQ7kNvwGk4fIf&_nc_oc=AdpII1bFo0bkRqG3tGXGdhoKxklhG49do4CmbTvE25NaVXGdO1JZMHc19_INJpYLoT0&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=B3IpN50WyzPelObWHVi7Ig&oh=00_AQMDnVI34wxHiwmspdflrRvrLb8LK73_iYs0pNknz01wAA&oe=6AC58693",
+      "reach": 556,
+      "views": 1002,
       "engagement": 8,
       "likes": 5,
       "comments": 0,
       "saves": 3,
       "shares": 0,
-      "eng_rate": 0.014466546112115732
+      "eng_rate": 0.014388489208633094
      },
      {
       "date": "2026-08-27",
       "type": "imagen",
       "caption": "Sorprende a tus invitados con nuestros encantadores frasquitos de miel pura Guatebee, el recuerdo ideal para…",
       "permalink": "https://www.instagram.com/p/Dcjdp6DjTSY/",
-      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/787406128_1073807915339944_3567141795467232461_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ruixCcwna0kQ7kNvwFS-dLH&_nc_oc=AdrXAe4e77QbMW-qIUVMlqlCaSP2DGnf91iwRDNnSyehcGsnIezGEmGtMUwvG6nsoZE&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=rMk5Dla-xKkhLUeHkiFm7w&oh=00_AQMmIZ458lcnzDlLfaf6BoyJcg1U9E_HiFA1DqHmXkLaXQ&oe=6AC440B9",
-      "reach": 466,
-      "views": 828,
+      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/787406128_1073807915339944_3567141795467232461_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ruixCcwna0kQ7kNvwGJRrUu&_nc_oc=Adok6G-vxvprsy8DwIEGOA1hzInh0V9jZHlHcUZ3QVpfv9PjNLngwMbI-huiA5awO2I&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=B3IpN50WyzPelObWHVi7Ig&oh=00_AQOc040ICEfGxW0zsGcDQ_jiVLZysfNsBvvZqsKNHOWzFQ&oe=6AC59239",
+      "reach": 473,
+      "views": 832,
       "engagement": 22,
       "likes": 14,
       "comments": 3,
       "saves": 7,
       "shares": 4,
-      "eng_rate": 0.04721030042918455
+      "eng_rate": 0.046511627906976744
      },
      {
       "date": "2026-08-01",
       "type": "imagen",
       "caption": "¡Regala dulzura y naturaleza en cada detalle! 🍯💐",
       "permalink": "https://www.instagram.com/p/DbgKMWnDpaD/",
-      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/763193358_1050710937649642_3023657168027947888_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6e79_AOUUs8Q7kNvwGvPgJN&_nc_oc=AdpMplkn6E0lf5STKHU32-GpfM09P-9ceGhoeTBTkDRCZnBFLcbPVa3nO0jZgm7gbmI&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=rMk5Dla-xKkhLUeHkiFm7w&oh=00_AQOQkjR8Z27sDNVER_pAmaNOmM0bKxyQrRFR68w7ClJwkA&oe=6AC42EAD",
-      "reach": 371,
-      "views": 562,
+      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/763193358_1050710937649642_3023657168027947888_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6e79_AOUUs8Q7kNvwFZ7uf9&_nc_oc=Adp8NqoB1h5zDpk827-c-2dHuv67O1UZDllpOCx-s1uto3LyZGC4r3SgOcIMb3UTs3U&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=B3IpN50WyzPelObWHVi7Ig&oh=00_AQNO71ee3DyCrCLunTG0s2S2Y5gBqZvKDe857mBEV9zdaw&oe=6AC5802D",
+      "reach": 373,
+      "views": 563,
       "engagement": 14,
       "likes": 3,
       "comments": 1,
       "saves": 7,
       "shares": 3,
-      "eng_rate": 0.03773584905660377
+      "eng_rate": 0.03753351206434316
      },
      {
       "date": "2026-08-03",
       "type": "imagen",
       "caption": "¿Ya probaste nuestro polen de flores Guatebee? Es el superalimento perfecto para darle un toque crujiente y…",
       "permalink": "https://www.instagram.com/p/DblOLOCjyyq/",
-      "image": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/762715386_1050716114315791_3391259429387509953_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WCJGNNDsIkgQ7kNvwGCs1ey&_nc_oc=AdoA-RCOHuC9xZLnto9MGh6-QI6MCXxTgbxuAvmAKgvf0bnvjwTNAkJYTq_gFPELixs&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=rMk5Dla-xKkhLUeHkiFm7w&oh=00_AQOBlqETlUHnKGXhjzfoXF58rCLHM6rSznSfHaBJ3zSFYQ&oe=6AC41AC2",
+      "image": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/762715386_1050716114315791_3391259429387509953_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WCJGNNDsIkgQ7kNvwEZ-q4t&_nc_oc=AdoQjLn0I460bJouiGrYjnOxzNV_pZqWIKF45kOLI9gpf7OcZmEC4Xvc2tPiCccIuak&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=B3IpN50WyzPelObWHVi7Ig&oh=00_AQOsQuW0NxiOoupx4z24TFt0nREeWgD0KTIOYWs7TP1_wQ&oe=6AC56C42",
       "reach": 308,
       "views": 547,
       "engagement": 12,
@@ -1102,22 +1231,22 @@
       "type": "imagen",
       "caption": "¡El toque dulce y natural que tus mañanas necesitan! ✨🥞",
       "permalink": "https://www.instagram.com/p/Db_Pt7mHxeK/",
-      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/773592656_1061680999885969_4130294050266767181_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0w_568FUkwYQ7kNvwFvoXxk&_nc_oc=AdpuunMcKfsAil37JXVs6-VWPYvpZxx81BbUAYAjrSjcg1zO2z7VzKx2-s_f4h4uHCg&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=rMk5Dla-xKkhLUeHkiFm7w&oh=00_AQNctYYyNEX6A9qtAFw61ZQtslO-T-tmbkc_ZDhL6CXbwA&oe=6AC415E1",
-      "reach": 270,
+      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/773592656_1061680999885969_4130294050266767181_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0w_568FUkwYQ7kNvwEqOPPe&_nc_oc=Adq9gGNlP4nxNFVYcvJ4hgLv9oz84LXfiiOhRllAWQo4ZC8PHVEhEcBdSVXEjLKqq8Q&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=B3IpN50WyzPelObWHVi7Ig&oh=00_AQNSImsMYPx_omRDouC9SXBI1SeFQAgU333gShp0X3JGZA&oe=6AC56761",
+      "reach": 271,
       "views": 451,
       "engagement": 6,
       "likes": 11,
       "comments": 0,
       "saves": 1,
       "shares": 0,
-      "eng_rate": 0.022222222222222223
+      "eng_rate": 0.02214022140221402
      },
      {
       "date": "2026-08-05",
       "type": "imagen",
       "caption": "Protege tu sistema inmunológico con el poder de la naturaleza. 🛡️🐝",
       "permalink": "https://www.instagram.com/p/DbqzzViD9NE/",
-      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/760242022_1050719967648739_2458881370141826127_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XGuPg7rot9QQ7kNvwEohn79&_nc_oc=AdrIB_RBy_UVunXfS7dv-Rg5jHJz8ygqlU9qeH01pxdfQ0K5ciZc8TP_CJCb3Bo67FI&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=rMk5Dla-xKkhLUeHkiFm7w&oh=00_AQOny9wI4Y2-IZKNMs0f1u1yF3eXqh9E079htkeHjsdxTA&oe=6AC430D3",
+      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/760242022_1050719967648739_2458881370141826127_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XGuPg7rot9QQ7kNvwFs9oEL&_nc_oc=AdpJaH2dFlSQwauFcuxEPQORhfIQFTmVkhOuKZE--31r-xh0SG03YVAnG2YdAHq6DLU&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=B3IpN50WyzPelObWHVi7Ig&oh=00_AQOfie7XbRaU2ecdh7j1PHa6PQ8jR5TActDmJNFBCUjdNA&oe=6AC58253",
       "reach": 269,
       "views": 460,
       "engagement": 3,
@@ -1131,7 +1260,7 @@
     "insights": {
      "summary": "Agosto 2026: 6 publicaciones, alcance promedio de 319 cuentas al día y 115 interacciones.",
      "wins": [
-      "La publicación con más interacción: “Sorprende a tus invitados con nuestros encantadores…” (22 interacciones, 466 de alcance)."
+      "La publicación con más interacción: “Sorprende a tus invitados con nuestros encantadores…” (22 interacciones, 473 de alcance)."
      ],
      "watch": [],
      "next": [
@@ -1156,10 +1285,10 @@
      "saves": 47,
      "shares": 27,
      "profile_taps": 10,
-     "new_followers": 105,
+     "new_followers": 112,
      "new_followers_days": 30,
      "posts": 7,
-     "post_eng_rate": 0.026194144838212634
+     "post_eng_rate": 0.025809716599190284
     },
     "daily": [
      {
@@ -1370,7 +1499,7 @@
       "reach": 901,
       "views": 1640,
       "interactions": 41,
-      "new_followers": 0
+      "new_followers": 7
      }
     ],
     "posts": [
@@ -1379,113 +1508,113 @@
       "type": "imagen",
       "caption": "Nuestra miel con chile cobanero le da el toque picante y dulce perfecto a tus pizzas, sliders y bocadillos…",
       "permalink": "https://www.instagram.com/p/Dcy20mECYVq/",
-      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/786888780_1078955838158485_2508094019555199249_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=w8IpMNJbNF0Q7kNvwEUn3DD&_nc_oc=AdplTuJzbf_ESGrqvYy_PSo6ShOnB0_HxA9CiXHiNTMJGuXXpQ1NI5yiIbW8oXy7LVA&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQNPiAxWBRYufXQUJETbEZLT-eHebNul4N1KGHd5agetDQ&oe=6AC421C7",
-      "reach": 409,
-      "views": 805,
+      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/786888780_1078955838158485_2508094019555199249_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=w8IpMNJbNF0Q7kNvwEXXfwq&_nc_oc=AdqIeY8EQosp0v5nT1BNfVJvLDsKfcntewckEGsQPp6Br_qDxU4RCVcuJnM0_N1wrow&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQMa8h6FCddozwM85WXA2jjHqqoK_4j69QtSKJ0oe-eSRQ&oe=6AC57347",
+      "reach": 414,
+      "views": 809,
       "engagement": 13,
       "likes": 13,
       "comments": 0,
       "saves": 2,
       "shares": 0,
-      "eng_rate": 0.03178484107579462
+      "eng_rate": 0.03140096618357488
      },
      {
       "date": "2026-09-06",
       "type": "imagen",
       "caption": "Fin de semana con un toque cítrico y vibrante en tus limonadas, tés y bebidas favoritas con nuestra miel…",
       "permalink": "https://www.instagram.com/p/Dc9K1d7nfgX/",
-      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/785146679_1078961074824628_8452126456513022848_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vYqV6JzDtZsQ7kNvwE07oH6&_nc_oc=AdqEkMvGjWwyiJpmNJW84Qr3KTmF7lc6iISuNRWxxao8O_yWr3aLPZPZMjPeEBtkfsA&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQM0a-yN2ZsBBAacliRw_DFnMpSpMxHNyy5GPR8w4tIFFg&oe=6AC43582",
-      "reach": 350,
-      "views": 614,
+      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/785146679_1078961074824628_8452126456513022848_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vYqV6JzDtZsQ7kNvwFX8YVY&_nc_oc=AdoE72q4VQxClH6PZLI9FrtsitUutt6AhhezKqYRGVLq_3O8vZ2xPru5RoJ7WpAwPVQ&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQOgeyd-rhTfg0_ALJPtCH9lKesoccEwyO4X4PY3EACmlg&oe=6AC58702",
+      "reach": 354,
+      "views": 618,
       "engagement": 6,
       "likes": 5,
       "comments": 0,
       "saves": 1,
       "shares": 0,
-      "eng_rate": 0.017142857142857144
+      "eng_rate": 0.01694915254237288
      },
      {
       "date": "2026-09-04",
       "type": "imagen",
       "caption": "Tres floraciones únicas en un solo empaque para endulzar tus mañanas y desayunos. Descubre los matices de la…",
       "permalink": "https://www.instagram.com/p/Dc3lGFXDuQa/",
-      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/790392287_1078957758158293_2663078331872255708_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=OrGjdMPpI1YQ7kNvwGJ2iRQ&_nc_oc=AdqbWZLXmvm4kxzhYnAPxNqWahjsHXZkc1pXnLGQuIEeF0ukr7TS7dGnXvSlFkSuMYQ&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQNeTcj5bB7N4Ucozw-4171t2xsdE9M-gSUcNG8G2r1sXA&oe=6AC4288D",
-      "reach": 303,
-      "views": 571,
+      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/790392287_1078957758158293_2663078331872255708_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=OrGjdMPpI1YQ7kNvwFH7g0q&_nc_oc=AdreytXWinYZmGgGsRsIT_2gD_ZNlI6PTHHll_45Io-eXGSIl6aKHgPcpzp28DKO-GA&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQNtm7fRlAuFfCM99rFU6l1DpDg2K8PcHHSDuUWAn9IY5w&oe=6AC57A0D",
+      "reach": 308,
+      "views": 575,
       "engagement": 3,
       "likes": 1,
       "comments": 0,
       "saves": 1,
       "shares": 1,
-      "eng_rate": 0.009900990099009901
+      "eng_rate": 0.00974025974025974
      },
      {
       "date": "2026-09-13",
       "type": "imagen",
       "caption": "¡Un superalimento natural para recargar tus días! Agrega una lluvia de vitalidad, proteína y sabor a tus…",
       "permalink": "https://www.instagram.com/p/DdPJxAWlYr2/",
-      "image": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/783898813_1078983074822428_4726377518582425340_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vsdqLuvusioQ7kNvwGTM0sJ&_nc_oc=AdpB5yQYwUbjIQ4GdmNnZLZq36zML3YlGz1xXPSwPQka5er_HdR-9yx95uvH9UYDzwY&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQMMkzgAZIIqU3CKB1QzNNfY9AdPE-XfhOfUBvcEKWfdFA&oe=6AC41FC0",
-      "reach": 296,
-      "views": 491,
+      "image": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/783898813_1078983074822428_4726377518582425340_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=N2rlu2eOtisQ7kNvwFi4Lm0&_nc_oc=AdqSsBNA6HH1dw3RhuPmDgl61UofSZafB_MbxXrXh14xhKIsjTbXtxn0uHDMa2OlVFU&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQNe_Q5mKX-1LgzTIqe8l7zsloztdoiRMHn5ZxWUHFDZaQ&oe=6AC57140",
+      "reach": 301,
+      "views": 494,
       "engagement": 5,
       "likes": 4,
       "comments": 0,
       "saves": 1,
       "shares": 0,
-      "eng_rate": 0.016891891891891893
+      "eng_rate": 0.016611295681063124
      },
      {
       "date": "2026-09-08",
       "type": "imagen",
       "caption": "Rendimiento, pureza y el mejor sabor para consentir a tus clientes. Nuestro formato de medio galón de miel…",
       "permalink": "https://www.instagram.com/p/DdCj_zGiG5d/",
-      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/786853771_1078971131490289_3924564406171242043_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6kwc0aZMEVwQ7kNvwEgNRnv&_nc_oc=AdreY5qsdOT_oqerfEXGpCHfx7n8lpptqP45uNiJC6iegFNsOTkJlcd1SyQx0_x_jtQ&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQNRP9T-ihCZYHq1Fl0V3qOtdPdQ-hsx1Q6q5hsVHD5vSA&oe=6AC43555",
-      "reach": 211,
-      "views": 367,
+      "image": "https://scontent-fra3-1.cdninstagram.com/v/t39.30808-6/786853771_1078971131490289_3924564406171242043_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hxS-l3siKyQQ7kNvwGIejPb&_nc_oc=Adqa9PxoUwhuntrDuwEIHW87P0R8V5FXnme86ZNlLDSMGe3g_ok1RjG7GXhhUuEa2a8&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQNioLzSa035zJaBaYAJYZveTbwfQ8Xhb4m9aseuRZ3yFw&oe=6AC586D5",
+      "reach": 214,
+      "views": 370,
       "engagement": 4,
       "likes": 4,
       "comments": 0,
       "saves": 0,
       "shares": 0,
-      "eng_rate": 0.018957345971563982
+      "eng_rate": 0.018691588785046728
      },
      {
       "date": "2026-09-10",
       "type": "imagen",
       "caption": "¡Poder natural en cada cucharada! La combinación perfecta de miel pura con trozos de jengibre te ayuda a…",
       "permalink": "https://www.instagram.com/p/DdHuYZvDRs4/",
-      "image": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/790457657_1078975211489881_8922372241039887866_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PADAXPlY7KEQ7kNvwHPAGST&_nc_oc=AdozLP0nqFdQIWKE3XiebuPsWxgT04uSEwADJV64FOkxR3d6rPbIoKb2xXomMPxCIJM&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQPKCjjNBb2-PMI9fACwF6DxI17amXjgp_MUS6kWZFJeOg&oe=6AC4284E",
-      "reach": 199,
-      "views": 356,
+      "image": "https://scontent-fra3-2.cdninstagram.com/v/t39.30808-6/790457657_1078975211489881_8922372241039887866_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PADAXPlY7KEQ7kNvwHF2e5D&_nc_oc=AdquFgEPkl8HsLz8P1UghUEmlMMWcLfv077j8G5a-J1pEH2EwGAjf810lHXSOaB0koI&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQMGLZd57vsTtwu0SUjonCu87XkI8ZpFFwWNNPe-uoZ4KA&oe=6AC579CE",
+      "reach": 202,
+      "views": 359,
       "engagement": 8,
       "likes": 7,
       "comments": 0,
       "saves": 1,
       "shares": 0,
-      "eng_rate": 0.04020100502512563
+      "eng_rate": 0.039603960396039604
      },
      {
       "date": "2026-09-15",
       "type": "imagen",
       "caption": "¡Feliz Día de la Independencia, Guatemala! Hoy celebramos la riqueza de nuestra tierra, la pasión de nuestra…",
       "permalink": "https://www.instagram.com/p/DdUMJ0uggXz/",
-      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/791197145_1078981388155930_6169829310799410619_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9bJTd-CPksgQ7kNvwFm2sfD&_nc_oc=AdoTWxzN2OPkGKT24IOzY0zqRYoPo1Lr9s5EEnYEOXQfAP4-L6rfDRqI_FFVXJoukh0&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=clogqUhYmTRfBcgi9EVX8Q&oh=00_AQMomcQYsSaCg8YMlOJ7Xhz8ye5I0aDol5jQK06AVDndow&oe=6AC4123D",
-      "reach": 179,
-      "views": 322,
+      "image": "https://scontent-fra5-1.cdninstagram.com/v/t39.30808-6/791197145_1078981388155930_6169829310799410619_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oPUF_9a6GHwQ7kNvwGB3xQf&_nc_oc=Ado4p10agKU8Le1Q9Gs_FMxV_TbnE0wh4WM3a5dNvUOhFhz_caiLNub8ZSzvS8BJBwg&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=w91kB6ZxHua10P2cbWl6mw&oh=00_AQOkKcBm7KstBB0P_vr0eqLgODkEAy8t9GO7vI0R0wgqfA&oe=6AC563BD",
+      "reach": 183,
+      "views": 334,
       "engagement": 12,
       "likes": 10,
       "comments": 0,
       "saves": 1,
       "shares": 0,
-      "eng_rate": 0.0670391061452514
+      "eng_rate": 0.06557377049180328
      }
     ],
     "insights": {
-     "summary": "Septiembre 2026: 7 publicaciones, alcance promedio de 634 cuentas al día y 263 interacciones; 105 seguidores nuevos.",
+     "summary": "Septiembre 2026: 7 publicaciones, alcance promedio de 634 cuentas al día y 263 interacciones; 112 seguidores nuevos.",
      "wins": [
       "El alcance promedio diario subió 99% (de 319 a 634 cuentas).",
       "Las interacciones por día subieron de 3.7 a 8.8.",
-      "La publicación con más interacción: “Nuestra miel con chile cobanero le da el toque picante y…” (13 interacciones, 409 de alcance)."
+      "La publicación con más interacción: “Nuestra miel con chile cobanero le da el toque picante y…” (13 interacciones, 414 de alcance)."
      ],
      "watch": [
       "El pico de alcance fue el 11 (2,328 cuentas). Si coincide con más pauta, parte de ese alcance viene de los anuncios."
@@ -1495,11 +1624,70 @@
       "Probar reels: este mes todas las publicaciones fueron imágenes, y los reels suelen alcanzar a más gente nueva."
      ]
     }
+   },
+   "2026-10": {
+    "label": "Octubre 2026",
+    "partial": true,
+    "through": "2026-10-01",
+    "days": 1,
+    "totals": {
+     "reach_avg": 1330,
+     "reach_peak": 1330,
+     "views": 2085,
+     "interactions": 48,
+     "likes": 38,
+     "comments": 1,
+     "saves": 1,
+     "shares": 2,
+     "profile_taps": 0,
+     "new_followers": 0,
+     "new_followers_days": 1,
+     "posts": 1,
+     "post_eng_rate": 0.05671077504725898
+    },
+    "daily": [
+     {
+      "date": "2026-10-01",
+      "reach": 1330,
+      "views": 2085,
+      "interactions": 48,
+      "new_followers": 0
+     }
+    ],
+    "posts": [
+     {
+      "date": "2026-10-01",
+      "type": "imagen",
+      "caption": "Por tan solo Q185 te llega uno de mis combos favoritos a la puerta de tu casa.",
+      "permalink": "https://www.instagram.com/reel/Dd9IvlRAeS4/",
+      "image": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/830612415_18465097984191118_1219986762770750074_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=2wz84sWHgwgQ7kNvwFwN1YH&_nc_oc=AdqNU_pGx4-UKMPr9HdvbgqxB6lwhbTTMZjNl5gziPsLSQka400D3KxoZX0_iAHGqQo&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=Q3DzRIWEzA_dxupbcQ2XAw&_nc_tpa=Q5bMBQJxPE5x6Aj6UolBuN8W5I-mFgUAuQsmOQKbrR-1SBkv3mz9_vydxUjDVnUOvBf-ylsc88fQexyLbg&oh=00_AQMl54Y4eyJ6TMm4b1nNwh6E7aN0qDB9EFQW1WnE2b3tKQ&oe=6AC57D81",
+      "reach": 529,
+      "views": 738,
+      "engagement": 30,
+      "likes": 26,
+      "comments": 1,
+      "saves": 0,
+      "shares": 0,
+      "eng_rate": 0.05671077504725898
+     }
+    ],
+    "insights": {
+     "summary": "Octubre 2026 (en curso, datos al 1): 1 publicaciones, alcance promedio de 1,330 cuentas al día y 48 interacciones; 0 seguidores nuevos.",
+     "wins": [
+      "El alcance promedio diario subió 110% (de 634 a 1,330 cuentas).",
+      "Las interacciones por día subieron de 8.8 a 48.0.",
+      "La publicación con más interacción: “Por tan solo Q185 te llega uno de mis combos favoritos a la…” (30 interacciones, 529 de alcance)."
+     ],
+     "watch": [],
+     "next": [
+      "Probar reels: este mes todas las publicaciones fueron imágenes, y los reels suelen alcanzar a más gente nueva."
+     ]
+    }
    }
   },
   "facebook": {
-   "followers": 7528,
-   "as_of": "2026-09-30"
+   "followers": 7533,
+   "as_of": "2026-10-01"
   },
   "fb_months": {
    "2026-08": {
@@ -1903,7 +2091,7 @@
     "through": null,
     "days": 30,
     "totals": {
-     "followers": 7528,
+     "followers": 7527,
      "followers_start": 7468,
      "new_followers": 65,
      "unfollows": 3,
@@ -2162,7 +2350,7 @@
      },
      {
       "date": "2026-09-28",
-      "followers": 7517,
+      "followers": 7516,
       "new_followers": 2,
       "unfollows": 0,
       "reach": 1253,
@@ -2171,7 +2359,7 @@
      },
      {
       "date": "2026-09-29",
-      "followers": 7523,
+      "followers": 7522,
       "new_followers": 6,
       "unfollows": 0,
       "reach": 2797,
@@ -2180,10 +2368,10 @@
      },
      {
       "date": "2026-09-30",
-      "followers": 7528,
+      "followers": 7527,
       "new_followers": 6,
       "unfollows": 1,
-      "reach": 2460,
+      "reach": 2466,
       "engagements": 208,
       "page_views": 118
      }
@@ -2295,6 +2483,66 @@
      "next": [
       "Probar publicaciones con pregunta directa, encuestas o videos cortos para generar comentarios.",
       "Publicar más seguido: van 7 publicaciones en 30 días."
+     ]
+    }
+   },
+   "2026-10": {
+    "label": "Octubre 2026",
+    "partial": true,
+    "through": "2026-10-01",
+    "days": 1,
+    "totals": {
+     "followers": 7533,
+     "followers_start": 7533,
+     "new_followers": 6,
+     "unfollows": 0,
+     "reach_avg": 2265,
+     "reach_peak": 2265,
+     "engagements": 142,
+     "page_views": 83,
+     "posts": 1,
+     "post_clicks": 0,
+     "post_reach_avg": 5,
+     "post_eng_rate": 0.0
+    },
+    "daily": [
+     {
+      "date": "2026-10-01",
+      "followers": 7533,
+      "new_followers": 6,
+      "unfollows": 0,
+      "reach": 2265,
+      "engagements": 142,
+      "page_views": 83
+     }
+    ],
+    "posts": [
+     {
+      "date": "2026-10-01",
+      "type": "post",
+      "caption": "Por tan solo Q185 te llega uno de mis combos favoritos a la puerta de tu casa. Escríbenos por DM o WhatsApp y…",
+      "permalink": "https://www.facebook.com/reel/1855260089260706/",
+      "image": "https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/833907557_1753297349292594_257207525977344194_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=d2b52d&_nc_ohc=deztN4OYqFsQ7kNvwGs2uVw&_nc_oc=AdpHnyszLmXgc4tBU1003J48tp08JhYf7VCMoSF7UZERswGmiwfeCZtWM_M_qZ3UZV4&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=OMTm9Aijtz0akwgz7OqKaQ&_nc_tpa=Q5bMBQKHwyMRoeGhvA7CXS5hK8EtWTZKl-Yues3pDjZ2yAnB7O2rNWj6c2CPtbmGJWi-qlog5cQkwOcSMA&oh=00_AQOf1FTOO9uBBcahGDV1GplcUNyiuiODPJxPNTwHnN0gZw&oe=6AC58EB6",
+      "reach": 5,
+      "engagement": 0,
+      "reactions": 0,
+      "comments": 0,
+      "clicks": 0,
+      "eng_rate": 0.0
+     }
+    ],
+    "insights": {
+     "summary": "Octubre 2026 (en curso, datos al 1): la página ganó +6 seguidores netos (6 nuevos, 0 dejaron de seguir), con 1 publicaciones y un alcance promedio de 2,265 personas al día.",
+     "wins": [
+      "Los seguidores nuevos por día subieron de 2.2 a 6.0.",
+      "La publicación que más movió: “Por tan solo Q185 te llega uno de mis combos favoritos a la…” (5 de alcance, 0 clics)."
+     ],
+     "watch": [
+      "El alcance promedio por publicación bajó 98%: de 315 a 5 personas.",
+      "Las publicaciones tienen poca interacción (0.0% del alcance). La interacción de la página viene sobre todo de los anuncios."
+     ],
+     "next": [
+      "Probar publicaciones con pregunta directa, encuestas o videos cortos para generar comentarios."
      ]
     }
    }
