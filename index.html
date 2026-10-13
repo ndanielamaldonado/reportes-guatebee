@@ -421,7 +421,7 @@ function init(d){
   $('#otabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;ometric=b.dataset.m;
     document.querySelectorAll('#otabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderODaily(cur)});
   const up=new Date(d.updated+'T12:00');
-  $('#foot').textContent=`Fuente: Meta Ads, Instagram y Facebook vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}. Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
+  $('#foot').textContent=`Fuente: Meta Ads, Instagram y Facebook vía ${d.source}. Actualizado el ${up.getDate()} de ${MES[up.getMonth()]} de ${up.getFullYear()}${d.updated_time?' a las '+d.updated_time:''} (hora de Guatemala). Conversaciones = chats de mensajería iniciados (WhatsApp, Messenger, Instagram).`;
   let saved=null;try{saved=localStorage.getItem('gb-month')}catch(e){}
   show(ks.includes(saved)?saved:ks[ks.length-1]);
   let sv=location.hash==='#organico'?'org':null;if(!sv){try{sv=localStorage.getItem('gb-view')}catch(e){}}

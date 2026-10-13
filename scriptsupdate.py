@@ -1,7 +1,7 @@
 """Actualiza data.json con los resultados de Meta Ads de Guatebee desde Windsor.ai.
 
-Se ejecuta a diario con GitHub Actions. Necesita el secreto WINDSOR_API_KEY.
-Reconstruye todos los meses desde START_MONTH hasta el mes de ayer (hora de Guatemala),
+Se ejecuta tres veces al día con GitHub Actions (6:50, 9:50 y 13:50, hora de Guatemala). Necesita el secreto WINDSOR_API_KEY.
+Reconstruye todos los meses desde START_MONTH hasta hoy (hora de Guatemala; el día en curso va como parcial),
 así las miniaturas de los anuncios se refrescan antes de caducar.
 """
 import calendar
@@ -64,7 +64,7 @@ def build_month(y, m, until):
     last = dt.date(y, m, calendar.monthrange(y, m)[1])
     end = min(last, until)
     df, dt_ = start.isoformat(), end.isoformat()
-    partial = end < last
+    partial = end < last or end >= dt.datetime.now(TZ).date()  # el día de hoy aún no termina
 
     tot_rows = fetch(["spend", "impressions", "reach", "clicks", "link_clicks", "ctr", "cpc", "cpm",
                       "frequency", "actions_lead", CONV, "actions_post_engagement"], df, dt_)
@@ -207,7 +207,7 @@ def build_ig_month(y, m, until, new_followers):
     last = dt.date(y, m, calendar.monthrange(y, m)[1])
     end = min(last, until)
     df, dt_ = start.isoformat(), end.isoformat()
-    partial = end < last
+    partial = end < last or end >= dt.datetime.now(TZ).date()  # el día de hoy aún no termina
 
     daily = []
     for r in ig(["date", "reach", "views", "total_interactions"], date_from=df, date_to=dt_):
@@ -319,7 +319,7 @@ def build_fb_month(y, m, until):
     last = dt.date(y, m, calendar.monthrange(y, m)[1])
     end = min(last, until)
     df, dt_ = start.isoformat(), end.isoformat()
-    partial = end < last
+    partial = end < last or end >= dt.datetime.now(TZ).date()  # el día de hoy aún no termina
     daily = []
     for r in fbo(["date", "page_follows", "page_daily_follows_unique", "page_daily_unfollows_unique",
                   "page_impressions_unique", "page_post_engagements", "page_views_total"], date_from=df, date_to=dt_):
@@ -456,8 +456,9 @@ def update_organic(data, keys, now, until):
 
 
 def main():
-    now = dt.datetime.now(TZ).date()
-    until = now - dt.timedelta(days=1)
+    now_dt = dt.datetime.now(TZ)
+    now = now_dt.date()
+    until = now  # incluye el día en curso (parcial) para que cada corrida traiga datos nuevos
     try:
         data = json.load(open(DATA_PATH, encoding="utf-8"))
     except FileNotFoundError:
@@ -492,6 +493,7 @@ def main():
     data["months"] = months
     update_organic(data, keys, now, until)
     data["updated"] = now.isoformat()
+    data["updated_time"] = now_dt.strftime("%H:%M")
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
     print("Meses actualizados:", ", ".join(months))
