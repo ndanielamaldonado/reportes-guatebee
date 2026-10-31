@@ -4,7 +4,7 @@
   "currency": "USD",
   "platform": "Meta Ads"
  },
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "source": "Windsor.ai",
  "months": {
   "2026-08": {
@@ -29,7 +29,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-10-30",
+     "date": "2026-10-31",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -65,7 +65,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-10-30",
+     "date": "2026-10-31",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -82,7 +82,7 @@
   "2026-10": {
    "label": "Octubre 2026",
    "partial": true,
-   "through": "2026-10-30",
+   "through": "2026-10-31",
    "totals": {
     "spend": 0.0,
     "impressions": 0,
@@ -101,7 +101,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-10-30",
+     "date": "2026-10-31",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -109,7 +109,7 @@
     }
    ],
    "insights": {
-    "summary": "Octubre 2026 (en curso, datos al 30): 0 conversaciones iniciadas con $0.00 de inversión.",
+    "summary": "Octubre 2026 (en curso, datos al 31): 0 conversaciones iniciadas con $0.00 de inversión.",
     "wins": [],
     "watch": [],
     "next": []
@@ -153,7 +153,8 @@
     "2026-10-27": 9704,
     "2026-10-28": 9710,
     "2026-10-29": 9714,
-    "2026-10-30": 0
+    "2026-10-30": 0,
+    "2026-10-31": 0
    },
    "new_followers": {
     "2026-08-31": 3,
@@ -215,9 +216,10 @@
     "2026-10-26": 5,
     "2026-10-27": 7,
     "2026-10-28": 0,
-    "2026-10-30": 0
+    "2026-10-30": 0,
+    "2026-10-31": 0
    },
-   "as_of": "2026-10-30"
+   "as_of": "2026-10-31"
   },
   "months": {
    "2026-08": {
@@ -242,7 +244,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -281,7 +283,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -301,7 +303,7 @@
    "2026-10": {
     "label": "Octubre 2026",
     "partial": true,
-    "through": "2026-10-30",
+    "through": "2026-10-31",
     "days": 1,
     "totals": {
      "reach_avg": 0,
@@ -320,7 +322,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -329,7 +331,7 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Octubre 2026 (en curso, datos al 30): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
+     "summary": "Octubre 2026 (en curso, datos al 31): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
      "wins": [],
      "watch": [],
      "next": [
@@ -364,7 +366,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -402,7 +404,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -422,7 +424,7 @@
    "2026-10": {
     "label": "Octubre 2026",
     "partial": true,
-    "through": "2026-10-30",
+    "through": "2026-10-31",
     "days": 1,
     "totals": {
      "followers": null,
@@ -440,7 +442,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -451,7 +453,7 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Octubre 2026 (en curso, datos al 30): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
+     "summary": "Octubre 2026 (en curso, datos al 31): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
      "wins": [],
      "watch": [],
      "next": []
@@ -459,5 +461,5 @@
    }
   }
  },
- "updated_time": "07:44"
+ "updated_time": "11:22"
 }
