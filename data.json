@@ -4,7 +4,7 @@
   "currency": "USD",
   "platform": "Meta Ads"
  },
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "source": "Windsor.ai",
  "months": {
   "2026-08": {
@@ -29,7 +29,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-10-31",
+     "date": "2026-11-01",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -65,7 +65,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-10-31",
+     "date": "2026-11-01",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -81,8 +81,8 @@
   },
   "2026-10": {
    "label": "Octubre 2026",
-   "partial": true,
-   "through": "2026-10-31",
+   "partial": false,
+   "through": null,
    "totals": {
     "spend": 0.0,
     "impressions": 0,
@@ -101,7 +101,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-10-31",
+     "date": "2026-11-01",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -109,7 +109,43 @@
     }
    ],
    "insights": {
-    "summary": "Octubre 2026 (en curso, datos al 31): 0 conversaciones iniciadas con $0.00 de inversión.",
+    "summary": "Octubre 2026: 0 conversaciones iniciadas con $0.00 de inversión.",
+    "wins": [],
+    "watch": [],
+    "next": []
+   }
+  },
+  "2026-11": {
+   "label": "Noviembre 2026",
+   "partial": true,
+   "through": "2026-11-01",
+   "totals": {
+    "spend": 0.0,
+    "impressions": 0,
+    "reach": 0,
+    "clicks": 0,
+    "link_clicks": 0,
+    "ctr": 0.0,
+    "cpc": 0.0,
+    "cpm": 0.0,
+    "frequency": 0.0,
+    "leads": 0,
+    "conversations": 0,
+    "engagement": 0
+   },
+   "campaigns": [],
+   "ads": [],
+   "daily": [
+    {
+     "date": "2026-11-01",
+     "spend": 0.0,
+     "impressions": 0,
+     "clicks": 0,
+     "conversations": 0
+    }
+   ],
+   "insights": {
+    "summary": "Noviembre 2026 (en curso, datos al 1): 0 conversaciones iniciadas con $0.00 de inversión.",
     "wins": [],
     "watch": [],
     "next": []
@@ -154,7 +190,8 @@
     "2026-10-28": 9710,
     "2026-10-29": 9714,
     "2026-10-30": 0,
-    "2026-10-31": 0
+    "2026-10-31": 0,
+    "2026-11-01": 0
    },
    "new_followers": {
     "2026-08-31": 3,
@@ -217,9 +254,10 @@
     "2026-10-27": 7,
     "2026-10-28": 0,
     "2026-10-30": 0,
-    "2026-10-31": 0
+    "2026-10-31": 0,
+    "2026-11-01": 0
    },
-   "as_of": "2026-10-31"
+   "as_of": "2026-11-01"
   },
   "months": {
    "2026-08": {
@@ -244,7 +282,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -283,7 +321,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -302,8 +340,8 @@
    },
    "2026-10": {
     "label": "Octubre 2026",
-    "partial": true,
-    "through": "2026-10-31",
+    "partial": false,
+    "through": null,
     "days": 1,
     "totals": {
      "reach_avg": 0,
@@ -322,7 +360,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -331,7 +369,46 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Octubre 2026 (en curso, datos al 31): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
+     "summary": "Octubre 2026: 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
+     "wins": [],
+     "watch": [],
+     "next": [
+      "Probar reels: este mes todas las publicaciones fueron imágenes, y los reels suelen alcanzar a más gente nueva."
+     ]
+    }
+   },
+   "2026-11": {
+    "label": "Noviembre 2026",
+    "partial": true,
+    "through": "2026-11-01",
+    "days": 1,
+    "totals": {
+     "reach_avg": 0,
+     "reach_peak": 0,
+     "views": 0,
+     "interactions": 0,
+     "likes": 0,
+     "comments": 0,
+     "saves": 0,
+     "shares": 0,
+     "profile_taps": 0,
+     "new_followers": 0,
+     "new_followers_days": 1,
+     "posts": 0,
+     "post_eng_rate": null
+    },
+    "daily": [
+     {
+      "date": "2026-11-01",
+      "reach": 0,
+      "views": 0,
+      "interactions": 0,
+      "new_followers": 0
+     }
+    ],
+    "posts": [],
+    "insights": {
+     "summary": "Noviembre 2026 (en curso, datos al 1): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
      "wins": [],
      "watch": [],
      "next": [
@@ -366,7 +443,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -404,7 +481,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -423,8 +500,8 @@
    },
    "2026-10": {
     "label": "Octubre 2026",
-    "partial": true,
-    "through": "2026-10-31",
+    "partial": false,
+    "through": null,
     "days": 1,
     "totals": {
      "followers": null,
@@ -442,7 +519,7 @@
     },
     "daily": [
      {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -453,7 +530,45 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Octubre 2026 (en curso, datos al 31): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
+     "summary": "Octubre 2026: la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
+     "wins": [],
+     "watch": [],
+     "next": []
+    }
+   },
+   "2026-11": {
+    "label": "Noviembre 2026",
+    "partial": true,
+    "through": "2026-11-01",
+    "days": 1,
+    "totals": {
+     "followers": null,
+     "followers_start": null,
+     "new_followers": 0,
+     "unfollows": 0,
+     "reach_avg": 0,
+     "reach_peak": 0,
+     "engagements": 0,
+     "page_views": 0,
+     "posts": 0,
+     "post_clicks": 0,
+     "post_reach_avg": 0,
+     "post_eng_rate": null
+    },
+    "daily": [
+     {
+      "date": "2026-11-01",
+      "followers": 0,
+      "new_followers": 0,
+      "unfollows": 0,
+      "reach": 0,
+      "engagements": 0,
+      "page_views": 0
+     }
+    ],
+    "posts": [],
+    "insights": {
+     "summary": "Noviembre 2026 (en curso, datos al 1): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
      "wins": [],
      "watch": [],
      "next": []
@@ -461,5 +576,5 @@
    }
   }
  },
- "updated_time": "11:22"
+ "updated_time": "12:09"
 }
