@@ -4,7 +4,7 @@
   "currency": "USD",
   "platform": "Meta Ads"
  },
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "source": "Windsor.ai",
  "months": {
   "2026-08": {
@@ -29,7 +29,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-19",
+     "date": "2026-11-20",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -65,7 +65,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-19",
+     "date": "2026-11-20",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -101,7 +101,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-19",
+     "date": "2026-11-20",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -118,7 +118,7 @@
   "2026-11": {
    "label": "Noviembre 2026",
    "partial": true,
-   "through": "2026-11-19",
+   "through": "2026-11-20",
    "totals": {
     "spend": 0.0,
     "impressions": 0,
@@ -137,7 +137,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-19",
+     "date": "2026-11-20",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -145,7 +145,7 @@
     }
    ],
    "insights": {
-    "summary": "Noviembre 2026 (en curso, datos al 19): 0 conversaciones iniciadas con $0.00 de inversión.",
+    "summary": "Noviembre 2026 (en curso, datos al 20): 0 conversaciones iniciadas con $0.00 de inversión.",
     "wins": [],
     "watch": [],
     "next": []
@@ -154,7 +154,7 @@
  },
  "organic": {
   "instagram": {
-   "username": "Uh-oh! These are not your real numbers: reads are paused because you have 3 accounts connected (facebook: 1, facebook_organic: 1, instagram: 1) and your Free plan includes 1 account. To resume, disconnect 2 accounts at https://onboard.windsor.ai/app/ or upgrade at https://onboard.windsor.ai/app/pricing, then wait 1 minute",
+   "username": "Uh-oh! These are not your real numbers: reads are paused because you have 3 accounts connected (facebook: 1, facebook_organic: 1, instagram: 1) and your Free plan includes 1 account. To resume, disconnect 2 accounts at https://onboard.windsor.ai/app/ or upgrade to the Basic plan at https://onboard.windsor.ai/app/pricing#p=basic, then wait 1 minute",
    "followers": 0,
    "media_count": 0,
    "follower_history": {
@@ -209,7 +209,8 @@
     "2026-11-16": 0,
     "2026-11-17": 0,
     "2026-11-18": 0,
-    "2026-11-19": 0
+    "2026-11-19": 0,
+    "2026-11-20": 0
    },
    "new_followers": {
     "2026-08-31": 3,
@@ -291,9 +292,10 @@
     "2026-11-16": 0,
     "2026-11-17": 0,
     "2026-11-18": 0,
-    "2026-11-19": 0
+    "2026-11-19": 0,
+    "2026-11-20": 0
    },
-   "as_of": "2026-11-19"
+   "as_of": "2026-11-20"
   },
   "months": {
    "2026-08": {
@@ -318,7 +320,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -357,7 +359,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -396,7 +398,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -416,7 +418,7 @@
    "2026-11": {
     "label": "Noviembre 2026",
     "partial": true,
-    "through": "2026-11-19",
+    "through": "2026-11-20",
     "days": 1,
     "totals": {
      "reach_avg": 0,
@@ -435,7 +437,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -444,7 +446,7 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Noviembre 2026 (en curso, datos al 19): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
+     "summary": "Noviembre 2026 (en curso, datos al 20): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
      "wins": [],
      "watch": [],
      "next": [
@@ -479,7 +481,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -517,7 +519,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -555,7 +557,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -575,7 +577,7 @@
    "2026-11": {
     "label": "Noviembre 2026",
     "partial": true,
-    "through": "2026-11-19",
+    "through": "2026-11-20",
     "days": 1,
     "totals": {
      "followers": null,
@@ -593,7 +595,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -604,7 +606,7 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Noviembre 2026 (en curso, datos al 19): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
+     "summary": "Noviembre 2026 (en curso, datos al 20): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
      "wins": [],
      "watch": [],
      "next": []
@@ -612,5 +614,5 @@
    }
   }
  },
- "updated_time": "15:01"
+ "updated_time": "14:46"
 }
