@@ -4,7 +4,7 @@
   "currency": "USD",
   "platform": "Meta Ads"
  },
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "source": "Windsor.ai",
  "months": {
   "2026-08": {
@@ -29,7 +29,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -65,7 +65,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -101,7 +101,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -118,7 +118,7 @@
   "2026-11": {
    "label": "Noviembre 2026",
    "partial": true,
-   "through": "2026-11-24",
+   "through": "2026-11-25",
    "totals": {
     "spend": 0.0,
     "impressions": 0,
@@ -137,7 +137,7 @@
    "ads": [],
    "daily": [
     {
-     "date": "2026-11-24",
+     "date": "2026-11-25",
      "spend": 0.0,
      "impressions": 0,
      "clicks": 0,
@@ -145,7 +145,7 @@
     }
    ],
    "insights": {
-    "summary": "Noviembre 2026 (en curso, datos al 24): 0 conversaciones iniciadas con $0.00 de inversión.",
+    "summary": "Noviembre 2026 (en curso, datos al 25): 0 conversaciones iniciadas con $0.00 de inversión.",
     "wins": [],
     "watch": [],
     "next": []
@@ -214,7 +214,8 @@
     "2026-11-21": 0,
     "2026-11-22": 0,
     "2026-11-23": 0,
-    "2026-11-24": 0
+    "2026-11-24": 0,
+    "2026-11-25": 0
    },
    "new_followers": {
     "2026-08-31": 3,
@@ -300,9 +301,10 @@
     "2026-11-20": 0,
     "2026-11-21": 0,
     "2026-11-22": 0,
-    "2026-11-24": 0
+    "2026-11-24": 0,
+    "2026-11-25": 0
    },
-   "as_of": "2026-11-24"
+   "as_of": "2026-11-25"
   },
   "months": {
    "2026-08": {
@@ -327,7 +329,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -366,7 +368,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -405,7 +407,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -425,7 +427,7 @@
    "2026-11": {
     "label": "Noviembre 2026",
     "partial": true,
-    "through": "2026-11-24",
+    "through": "2026-11-25",
     "days": 1,
     "totals": {
      "reach_avg": 0,
@@ -444,7 +446,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "reach": 0,
       "views": 0,
       "interactions": 0,
@@ -453,7 +455,7 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Noviembre 2026 (en curso, datos al 24): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
+     "summary": "Noviembre 2026 (en curso, datos al 25): 0 publicaciones, alcance promedio de 0 cuentas al día y 0 interacciones; 0 seguidores nuevos.",
      "wins": [],
      "watch": [],
      "next": [
@@ -488,7 +490,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -526,7 +528,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -564,7 +566,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -584,7 +586,7 @@
    "2026-11": {
     "label": "Noviembre 2026",
     "partial": true,
-    "through": "2026-11-24",
+    "through": "2026-11-25",
     "days": 1,
     "totals": {
      "followers": null,
@@ -602,7 +604,7 @@
     },
     "daily": [
      {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "followers": 0,
       "new_followers": 0,
       "unfollows": 0,
@@ -613,7 +615,7 @@
     ],
     "posts": [],
     "insights": {
-     "summary": "Noviembre 2026 (en curso, datos al 24): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
+     "summary": "Noviembre 2026 (en curso, datos al 25): la página ganó +0 seguidores netos (0 nuevos, 0 dejaron de seguir), con 0 publicaciones y un alcance promedio de 0 personas al día.",
      "wins": [],
      "watch": [],
      "next": []
@@ -621,5 +623,5 @@
    }
   }
  },
- "updated_time": "16:47"
+ "updated_time": "16:00"
 }
